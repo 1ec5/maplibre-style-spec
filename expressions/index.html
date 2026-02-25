@@ -19,8 +19,11 @@
         <link rel="next" href="../font-faces/">
       
       
+        
+      
+      
       <link rel="icon" href="https://maplibre.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+      <meta name="generator" content="zensical-0.0.23">
     
     
       
@@ -28,10 +31,15 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.1e989742.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
 
@@ -45,44 +53,17 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
     
       <link rel="stylesheet" href="../assets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
-    
-    
-      
-        <meta  property="og:type"  content="website" >
-      
-        <meta  property="og:title"  content="Expressions - MapLibre Style Spec" >
-      
-        <meta  property="og:description"  content="Documentation for the MapLibre Style Specification" >
-      
-        <meta  property="og:image"  content="https://www.maplibre.org/maplibre-style-spec/assets/images/social/expressions.png" >
-      
-        <meta  property="og:image:type"  content="image/png" >
-      
-        <meta  property="og:image:width"  content="1200" >
-      
-        <meta  property="og:image:height"  content="630" >
-      
-        <meta  property="og:url"  content="https://www.maplibre.org/maplibre-style-spec/expressions/" >
-      
-        <meta  name="twitter:card"  content="summary_large_image" >
-      
-        <meta  name="twitter:title"  content="Expressions - MapLibre Style Spec" >
-      
-        <meta  name="twitter:description"  content="Documentation for the MapLibre Style Specification" >
-      
-        <meta  name="twitter:image"  content="https://www.maplibre.org/maplibre-style-spec/assets/images/social/expressions.png" >
-      
     
     
   </head>
@@ -120,14 +101,14 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MapLibre Style Spec" class="md-header__button md-logo" aria-label="MapLibre Style Spec" data-md-component="logo">
+    <a href="./.." title="MapLibre Style Spec" class="md-header__button md-logo" aria-label="MapLibre Style Spec" data-md-component="logo">
       
   <img src="../assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -191,57 +172,28 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
         </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
 </div>
       
     
-    
-      <div class="md-header__source">
+    <div class="md-header__source">
+      
         <a href="https://github.com/maplibre/maplibre-style-spec" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
   </div>
 </a>
-      </div>
-    
+      
+    </div>
   </nav>
   
 </header>
@@ -267,7 +219,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MapLibre Style Spec" class="md-nav__button md-logo" aria-label="MapLibre Style Spec" data-md-component="logo">
+    <a href="./.." title="MapLibre Style Spec" class="md-nav__button md-logo" aria-label="MapLibre Style Spec" data-md-component="logo">
       
   <img src="../assets/logo.svg" alt="logo">
 
@@ -279,7 +231,7 @@
       <a href="https://github.com/maplibre/maplibre-style-spec" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -296,14 +248,19 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="./.." class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
     
   </span>
+  
   
 
       </a>
@@ -323,9 +280,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Deprecations
+  
+
     
   </span>
+  
   
 
       </a>
@@ -354,29 +316,40 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Expressions
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
+    
+  
     Expressions
+  
+
     
   </span>
+  
   
 
       </a>
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -385,14 +358,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#data-expressions" class="md-nav__link">
     <span class="md-ellipsis">
-      Data expressions
+      
+        Data expressions
+      
     </span>
   </a>
   
@@ -401,7 +376,9 @@
         <li class="md-nav__item">
   <a href="#camera-expressions" class="md-nav__link">
     <span class="md-ellipsis">
-      Camera expressions
+      
+        Camera expressions
+      
     </span>
   </a>
   
@@ -410,7 +387,9 @@
         <li class="md-nav__item">
   <a href="#composition" class="md-nav__link">
     <span class="md-ellipsis">
-      Composition
+      
+        Composition
+      
     </span>
   </a>
   
@@ -419,7 +398,9 @@
         <li class="md-nav__item">
   <a href="#type-system" class="md-nav__link">
     <span class="md-ellipsis">
-      Type system
+      
+        Type system
+      
     </span>
   </a>
   
@@ -428,7 +409,9 @@
         <li class="md-nav__item">
   <a href="#variable-binding" class="md-nav__link">
     <span class="md-ellipsis">
-      Variable binding
+      
+        Variable binding
+      
     </span>
   </a>
   
@@ -438,7 +421,9 @@
           <li class="md-nav__item">
   <a href="#let" class="md-nav__link">
     <span class="md-ellipsis">
-      let
+      
+        let
+      
     </span>
   </a>
   
@@ -447,7 +432,9 @@
           <li class="md-nav__item">
   <a href="#var" class="md-nav__link">
     <span class="md-ellipsis">
-      var
+      
+        var
+      
     </span>
   </a>
   
@@ -461,7 +448,9 @@
         <li class="md-nav__item">
   <a href="#types" class="md-nav__link">
     <span class="md-ellipsis">
-      Types
+      
+        Types
+      
     </span>
   </a>
   
@@ -471,7 +460,9 @@
           <li class="md-nav__item">
   <a href="#literal" class="md-nav__link">
     <span class="md-ellipsis">
-      literal
+      
+        literal
+      
     </span>
   </a>
   
@@ -480,7 +471,9 @@
           <li class="md-nav__item">
   <a href="#array" class="md-nav__link">
     <span class="md-ellipsis">
-      array
+      
+        array
+      
     </span>
   </a>
   
@@ -489,7 +482,9 @@
           <li class="md-nav__item">
   <a href="#typeof" class="md-nav__link">
     <span class="md-ellipsis">
-      typeof
+      
+        typeof
+      
     </span>
   </a>
   
@@ -498,7 +493,9 @@
           <li class="md-nav__item">
   <a href="#string" class="md-nav__link">
     <span class="md-ellipsis">
-      string
+      
+        string
+      
     </span>
   </a>
   
@@ -507,7 +504,9 @@
           <li class="md-nav__item">
   <a href="#number" class="md-nav__link">
     <span class="md-ellipsis">
-      number
+      
+        number
+      
     </span>
   </a>
   
@@ -516,7 +515,9 @@
           <li class="md-nav__item">
   <a href="#boolean" class="md-nav__link">
     <span class="md-ellipsis">
-      boolean
+      
+        boolean
+      
     </span>
   </a>
   
@@ -525,7 +526,9 @@
           <li class="md-nav__item">
   <a href="#object" class="md-nav__link">
     <span class="md-ellipsis">
-      object
+      
+        object
+      
     </span>
   </a>
   
@@ -534,7 +537,9 @@
           <li class="md-nav__item">
   <a href="#collator" class="md-nav__link">
     <span class="md-ellipsis">
-      collator
+      
+        collator
+      
     </span>
   </a>
   
@@ -543,7 +548,9 @@
           <li class="md-nav__item">
   <a href="#format" class="md-nav__link">
     <span class="md-ellipsis">
-      format
+      
+        format
+      
     </span>
   </a>
   
@@ -552,7 +559,9 @@
           <li class="md-nav__item">
   <a href="#image" class="md-nav__link">
     <span class="md-ellipsis">
-      image
+      
+        image
+      
     </span>
   </a>
   
@@ -561,7 +570,9 @@
           <li class="md-nav__item">
   <a href="#number-format" class="md-nav__link">
     <span class="md-ellipsis">
-      number-format
+      
+        number-format
+      
     </span>
   </a>
   
@@ -570,7 +581,9 @@
           <li class="md-nav__item">
   <a href="#to-string" class="md-nav__link">
     <span class="md-ellipsis">
-      to-string
+      
+        to-string
+      
     </span>
   </a>
   
@@ -579,7 +592,9 @@
           <li class="md-nav__item">
   <a href="#to-number" class="md-nav__link">
     <span class="md-ellipsis">
-      to-number
+      
+        to-number
+      
     </span>
   </a>
   
@@ -588,7 +603,9 @@
           <li class="md-nav__item">
   <a href="#to-boolean" class="md-nav__link">
     <span class="md-ellipsis">
-      to-boolean
+      
+        to-boolean
+      
     </span>
   </a>
   
@@ -597,7 +614,9 @@
           <li class="md-nav__item">
   <a href="#to-color" class="md-nav__link">
     <span class="md-ellipsis">
-      to-color
+      
+        to-color
+      
     </span>
   </a>
   
@@ -611,7 +630,9 @@
         <li class="md-nav__item">
   <a href="#lookup" class="md-nav__link">
     <span class="md-ellipsis">
-      Lookup
+      
+        Lookup
+      
     </span>
   </a>
   
@@ -621,7 +642,9 @@
           <li class="md-nav__item">
   <a href="#at" class="md-nav__link">
     <span class="md-ellipsis">
-      at
+      
+        at
+      
     </span>
   </a>
   
@@ -630,7 +653,9 @@
           <li class="md-nav__item">
   <a href="#in" class="md-nav__link">
     <span class="md-ellipsis">
-      in
+      
+        in
+      
     </span>
   </a>
   
@@ -639,7 +664,9 @@
           <li class="md-nav__item">
   <a href="#index-of" class="md-nav__link">
     <span class="md-ellipsis">
-      index-of
+      
+        index-of
+      
     </span>
   </a>
   
@@ -648,7 +675,9 @@
           <li class="md-nav__item">
   <a href="#slice" class="md-nav__link">
     <span class="md-ellipsis">
-      slice
+      
+        slice
+      
     </span>
   </a>
   
@@ -657,7 +686,9 @@
           <li class="md-nav__item">
   <a href="#global-state" class="md-nav__link">
     <span class="md-ellipsis">
-      global-state
+      
+        global-state
+      
     </span>
   </a>
   
@@ -666,7 +697,9 @@
           <li class="md-nav__item">
   <a href="#get" class="md-nav__link">
     <span class="md-ellipsis">
-      get
+      
+        get
+      
     </span>
   </a>
   
@@ -675,7 +708,9 @@
           <li class="md-nav__item">
   <a href="#has" class="md-nav__link">
     <span class="md-ellipsis">
-      has
+      
+        has
+      
     </span>
   </a>
   
@@ -684,7 +719,9 @@
           <li class="md-nav__item">
   <a href="#length" class="md-nav__link">
     <span class="md-ellipsis">
-      length
+      
+        length
+      
     </span>
   </a>
   
@@ -698,7 +735,9 @@
         <li class="md-nav__item">
   <a href="#decision" class="md-nav__link">
     <span class="md-ellipsis">
-      Decision
+      
+        Decision
+      
     </span>
   </a>
   
@@ -708,7 +747,9 @@
           <li class="md-nav__item">
   <a href="#case" class="md-nav__link">
     <span class="md-ellipsis">
-      case
+      
+        case
+      
     </span>
   </a>
   
@@ -717,7 +758,9 @@
           <li class="md-nav__item">
   <a href="#match" class="md-nav__link">
     <span class="md-ellipsis">
-      match
+      
+        match
+      
     </span>
   </a>
   
@@ -726,7 +769,9 @@
           <li class="md-nav__item">
   <a href="#coalesce" class="md-nav__link">
     <span class="md-ellipsis">
-      coalesce
+      
+        coalesce
+      
     </span>
   </a>
   
@@ -735,7 +780,9 @@
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      ==
+      
+        ==
+      
     </span>
   </a>
   
@@ -744,7 +791,9 @@
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      !=
+      
+        !=
+      
     </span>
   </a>
   
@@ -753,7 +802,9 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      &gt;
+      
+        &gt;
+      
     </span>
   </a>
   
@@ -762,7 +813,9 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      &lt;
+      
+        &lt;
+      
     </span>
   </a>
   
@@ -771,7 +824,9 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      &gt;=
+      
+        &gt;=
+      
     </span>
   </a>
   
@@ -780,7 +835,9 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      &lt;=
+      
+        &lt;=
+      
     </span>
   </a>
   
@@ -789,7 +846,9 @@
           <li class="md-nav__item">
   <a href="#all" class="md-nav__link">
     <span class="md-ellipsis">
-      all
+      
+        all
+      
     </span>
   </a>
   
@@ -798,7 +857,9 @@
           <li class="md-nav__item">
   <a href="#any" class="md-nav__link">
     <span class="md-ellipsis">
-      any
+      
+        any
+      
     </span>
   </a>
   
@@ -807,7 +868,9 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      !
+      
+        !
+      
     </span>
   </a>
   
@@ -816,7 +879,9 @@
           <li class="md-nav__item">
   <a href="#within" class="md-nav__link">
     <span class="md-ellipsis">
-      within
+      
+        within
+      
     </span>
   </a>
   
@@ -830,7 +895,9 @@
         <li class="md-nav__item">
   <a href="#ramps-scales-curves" class="md-nav__link">
     <span class="md-ellipsis">
-      Ramps, scales, curves
+      
+        Ramps, scales, curves
+      
     </span>
   </a>
   
@@ -840,7 +907,9 @@
           <li class="md-nav__item">
   <a href="#step" class="md-nav__link">
     <span class="md-ellipsis">
-      step
+      
+        step
+      
     </span>
   </a>
   
@@ -849,7 +918,9 @@
           <li class="md-nav__item">
   <a href="#interpolate" class="md-nav__link">
     <span class="md-ellipsis">
-      interpolate
+      
+        interpolate
+      
     </span>
   </a>
   
@@ -858,7 +929,9 @@
           <li class="md-nav__item">
   <a href="#interpolate-hcl" class="md-nav__link">
     <span class="md-ellipsis">
-      interpolate-hcl
+      
+        interpolate-hcl
+      
     </span>
   </a>
   
@@ -867,7 +940,9 @@
           <li class="md-nav__item">
   <a href="#interpolate-lab" class="md-nav__link">
     <span class="md-ellipsis">
-      interpolate-lab
+      
+        interpolate-lab
+      
     </span>
   </a>
   
@@ -881,7 +956,9 @@
         <li class="md-nav__item">
   <a href="#math" class="md-nav__link">
     <span class="md-ellipsis">
-      Math
+      
+        Math
+      
     </span>
   </a>
   
@@ -891,7 +968,9 @@
           <li class="md-nav__item">
   <a href="#ln2" class="md-nav__link">
     <span class="md-ellipsis">
-      ln2
+      
+        ln2
+      
     </span>
   </a>
   
@@ -900,7 +979,9 @@
           <li class="md-nav__item">
   <a href="#pi" class="md-nav__link">
     <span class="md-ellipsis">
-      pi
+      
+        pi
+      
     </span>
   </a>
   
@@ -909,7 +990,9 @@
           <li class="md-nav__item">
   <a href="#e" class="md-nav__link">
     <span class="md-ellipsis">
-      e
+      
+        e
+      
     </span>
   </a>
   
@@ -918,7 +1001,9 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      +
+      
+        +
+      
     </span>
   </a>
   
@@ -927,7 +1012,9 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      *
+      
+        *
+      
     </span>
   </a>
   
@@ -936,7 +1023,9 @@
           <li class="md-nav__item">
   <a href="#-" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      
+        -
+      
     </span>
   </a>
   
@@ -945,7 +1034,9 @@
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      /
+      
+        /
+      
     </span>
   </a>
   
@@ -954,7 +1045,9 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      %
+      
+        %
+      
     </span>
   </a>
   
@@ -963,7 +1056,9 @@
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      ^
+      
+        ^
+      
     </span>
   </a>
   
@@ -972,7 +1067,9 @@
           <li class="md-nav__item">
   <a href="#sqrt" class="md-nav__link">
     <span class="md-ellipsis">
-      sqrt
+      
+        sqrt
+      
     </span>
   </a>
   
@@ -981,7 +1078,9 @@
           <li class="md-nav__item">
   <a href="#log10" class="md-nav__link">
     <span class="md-ellipsis">
-      log10
+      
+        log10
+      
     </span>
   </a>
   
@@ -990,7 +1089,9 @@
           <li class="md-nav__item">
   <a href="#ln" class="md-nav__link">
     <span class="md-ellipsis">
-      ln
+      
+        ln
+      
     </span>
   </a>
   
@@ -999,7 +1100,9 @@
           <li class="md-nav__item">
   <a href="#log2" class="md-nav__link">
     <span class="md-ellipsis">
-      log2
+      
+        log2
+      
     </span>
   </a>
   
@@ -1008,7 +1111,9 @@
           <li class="md-nav__item">
   <a href="#sin" class="md-nav__link">
     <span class="md-ellipsis">
-      sin
+      
+        sin
+      
     </span>
   </a>
   
@@ -1017,7 +1122,9 @@
           <li class="md-nav__item">
   <a href="#cos" class="md-nav__link">
     <span class="md-ellipsis">
-      cos
+      
+        cos
+      
     </span>
   </a>
   
@@ -1026,7 +1133,9 @@
           <li class="md-nav__item">
   <a href="#tan" class="md-nav__link">
     <span class="md-ellipsis">
-      tan
+      
+        tan
+      
     </span>
   </a>
   
@@ -1035,7 +1144,9 @@
           <li class="md-nav__item">
   <a href="#asin" class="md-nav__link">
     <span class="md-ellipsis">
-      asin
+      
+        asin
+      
     </span>
   </a>
   
@@ -1044,7 +1155,9 @@
           <li class="md-nav__item">
   <a href="#acos" class="md-nav__link">
     <span class="md-ellipsis">
-      acos
+      
+        acos
+      
     </span>
   </a>
   
@@ -1053,7 +1166,9 @@
           <li class="md-nav__item">
   <a href="#atan" class="md-nav__link">
     <span class="md-ellipsis">
-      atan
+      
+        atan
+      
     </span>
   </a>
   
@@ -1062,7 +1177,9 @@
           <li class="md-nav__item">
   <a href="#min" class="md-nav__link">
     <span class="md-ellipsis">
-      min
+      
+        min
+      
     </span>
   </a>
   
@@ -1071,7 +1188,9 @@
           <li class="md-nav__item">
   <a href="#max" class="md-nav__link">
     <span class="md-ellipsis">
-      max
+      
+        max
+      
     </span>
   </a>
   
@@ -1080,7 +1199,9 @@
           <li class="md-nav__item">
   <a href="#round" class="md-nav__link">
     <span class="md-ellipsis">
-      round
+      
+        round
+      
     </span>
   </a>
   
@@ -1089,7 +1210,9 @@
           <li class="md-nav__item">
   <a href="#abs" class="md-nav__link">
     <span class="md-ellipsis">
-      abs
+      
+        abs
+      
     </span>
   </a>
   
@@ -1098,7 +1221,9 @@
           <li class="md-nav__item">
   <a href="#ceil" class="md-nav__link">
     <span class="md-ellipsis">
-      ceil
+      
+        ceil
+      
     </span>
   </a>
   
@@ -1107,7 +1232,9 @@
           <li class="md-nav__item">
   <a href="#floor" class="md-nav__link">
     <span class="md-ellipsis">
-      floor
+      
+        floor
+      
     </span>
   </a>
   
@@ -1116,7 +1243,9 @@
           <li class="md-nav__item">
   <a href="#distance" class="md-nav__link">
     <span class="md-ellipsis">
-      distance
+      
+        distance
+      
     </span>
   </a>
   
@@ -1130,7 +1259,9 @@
         <li class="md-nav__item">
   <a href="#color" class="md-nav__link">
     <span class="md-ellipsis">
-      Color
+      
+        Color
+      
     </span>
   </a>
   
@@ -1140,7 +1271,9 @@
           <li class="md-nav__item">
   <a href="#to-rgba" class="md-nav__link">
     <span class="md-ellipsis">
-      to-rgba
+      
+        to-rgba
+      
     </span>
   </a>
   
@@ -1149,7 +1282,9 @@
           <li class="md-nav__item">
   <a href="#rgb" class="md-nav__link">
     <span class="md-ellipsis">
-      rgb
+      
+        rgb
+      
     </span>
   </a>
   
@@ -1158,7 +1293,9 @@
           <li class="md-nav__item">
   <a href="#rgba" class="md-nav__link">
     <span class="md-ellipsis">
-      rgba
+      
+        rgba
+      
     </span>
   </a>
   
@@ -1172,7 +1309,9 @@
         <li class="md-nav__item">
   <a href="#feature-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Feature data
+      
+        Feature data
+      
     </span>
   </a>
   
@@ -1182,7 +1321,9 @@
           <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
-      properties
+      
+        properties
+      
     </span>
   </a>
   
@@ -1191,7 +1332,9 @@
           <li class="md-nav__item">
   <a href="#feature-state" class="md-nav__link">
     <span class="md-ellipsis">
-      feature-state
+      
+        feature-state
+      
     </span>
   </a>
   
@@ -1200,7 +1343,9 @@
           <li class="md-nav__item">
   <a href="#geometry-type" class="md-nav__link">
     <span class="md-ellipsis">
-      geometry-type
+      
+        geometry-type
+      
     </span>
   </a>
   
@@ -1209,7 +1354,9 @@
           <li class="md-nav__item">
   <a href="#id" class="md-nav__link">
     <span class="md-ellipsis">
-      id
+      
+        id
+      
     </span>
   </a>
   
@@ -1218,7 +1365,9 @@
           <li class="md-nav__item">
   <a href="#line-progress" class="md-nav__link">
     <span class="md-ellipsis">
-      line-progress
+      
+        line-progress
+      
     </span>
   </a>
   
@@ -1227,7 +1376,9 @@
           <li class="md-nav__item">
   <a href="#accumulated" class="md-nav__link">
     <span class="md-ellipsis">
-      accumulated
+      
+        accumulated
+      
     </span>
   </a>
   
@@ -1241,7 +1392,9 @@
         <li class="md-nav__item">
   <a href="#zoom" class="md-nav__link">
     <span class="md-ellipsis">
-      Zoom
+      
+        Zoom
+      
     </span>
   </a>
   
@@ -1251,7 +1404,9 @@
           <li class="md-nav__item">
   <a href="#zoom_1" class="md-nav__link">
     <span class="md-ellipsis">
-      zoom
+      
+        zoom
+      
     </span>
   </a>
   
@@ -1265,7 +1420,9 @@
         <li class="md-nav__item">
   <a href="#heatmap" class="md-nav__link">
     <span class="md-ellipsis">
-      Heatmap
+      
+        Heatmap
+      
     </span>
   </a>
   
@@ -1275,7 +1432,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-density" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-density
+      
+        heatmap-density
+      
     </span>
   </a>
   
@@ -1289,7 +1448,9 @@
         <li class="md-nav__item">
   <a href="#color-relief" class="md-nav__link">
     <span class="md-ellipsis">
-      Color Relief
+      
+        Color Relief
+      
     </span>
   </a>
   
@@ -1299,7 +1460,9 @@
           <li class="md-nav__item">
   <a href="#elevation" class="md-nav__link">
     <span class="md-ellipsis">
-      elevation
+      
+        elevation
+      
     </span>
   </a>
   
@@ -1313,7 +1476,9 @@
         <li class="md-nav__item">
   <a href="#string_1" class="md-nav__link">
     <span class="md-ellipsis">
-      String
+      
+        String
+      
     </span>
   </a>
   
@@ -1323,7 +1488,9 @@
           <li class="md-nav__item">
   <a href="#is-supported-script" class="md-nav__link">
     <span class="md-ellipsis">
-      is-supported-script
+      
+        is-supported-script
+      
     </span>
   </a>
   
@@ -1332,7 +1499,9 @@
           <li class="md-nav__item">
   <a href="#upcase" class="md-nav__link">
     <span class="md-ellipsis">
-      upcase
+      
+        upcase
+      
     </span>
   </a>
   
@@ -1341,7 +1510,9 @@
           <li class="md-nav__item">
   <a href="#downcase" class="md-nav__link">
     <span class="md-ellipsis">
-      downcase
+      
+        downcase
+      
     </span>
   </a>
   
@@ -1350,7 +1521,9 @@
           <li class="md-nav__item">
   <a href="#concat" class="md-nav__link">
     <span class="md-ellipsis">
-      concat
+      
+        concat
+      
     </span>
   </a>
   
@@ -1359,7 +1532,9 @@
           <li class="md-nav__item">
   <a href="#resolved-locale" class="md-nav__link">
     <span class="md-ellipsis">
-      resolved-locale
+      
+        resolved-locale
+      
     </span>
   </a>
   
@@ -1390,9 +1565,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Font-faces
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1412,9 +1592,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Glyphs
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1434,9 +1619,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Layers
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1456,9 +1646,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Light
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1478,9 +1673,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Projection
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1500,9 +1700,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Root
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1522,9 +1727,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sky
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1544,9 +1754,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sources
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1566,9 +1781,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sprite
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1588,9 +1808,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     State
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1610,9 +1835,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Terrain
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1632,9 +1862,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Transition
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1654,9 +1889,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Types
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1677,7 +1917,8 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -1686,14 +1927,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#data-expressions" class="md-nav__link">
     <span class="md-ellipsis">
-      Data expressions
+      
+        Data expressions
+      
     </span>
   </a>
   
@@ -1702,7 +1945,9 @@
         <li class="md-nav__item">
   <a href="#camera-expressions" class="md-nav__link">
     <span class="md-ellipsis">
-      Camera expressions
+      
+        Camera expressions
+      
     </span>
   </a>
   
@@ -1711,7 +1956,9 @@
         <li class="md-nav__item">
   <a href="#composition" class="md-nav__link">
     <span class="md-ellipsis">
-      Composition
+      
+        Composition
+      
     </span>
   </a>
   
@@ -1720,7 +1967,9 @@
         <li class="md-nav__item">
   <a href="#type-system" class="md-nav__link">
     <span class="md-ellipsis">
-      Type system
+      
+        Type system
+      
     </span>
   </a>
   
@@ -1729,7 +1978,9 @@
         <li class="md-nav__item">
   <a href="#variable-binding" class="md-nav__link">
     <span class="md-ellipsis">
-      Variable binding
+      
+        Variable binding
+      
     </span>
   </a>
   
@@ -1739,7 +1990,9 @@
           <li class="md-nav__item">
   <a href="#let" class="md-nav__link">
     <span class="md-ellipsis">
-      let
+      
+        let
+      
     </span>
   </a>
   
@@ -1748,7 +2001,9 @@
           <li class="md-nav__item">
   <a href="#var" class="md-nav__link">
     <span class="md-ellipsis">
-      var
+      
+        var
+      
     </span>
   </a>
   
@@ -1762,7 +2017,9 @@
         <li class="md-nav__item">
   <a href="#types" class="md-nav__link">
     <span class="md-ellipsis">
-      Types
+      
+        Types
+      
     </span>
   </a>
   
@@ -1772,7 +2029,9 @@
           <li class="md-nav__item">
   <a href="#literal" class="md-nav__link">
     <span class="md-ellipsis">
-      literal
+      
+        literal
+      
     </span>
   </a>
   
@@ -1781,7 +2040,9 @@
           <li class="md-nav__item">
   <a href="#array" class="md-nav__link">
     <span class="md-ellipsis">
-      array
+      
+        array
+      
     </span>
   </a>
   
@@ -1790,7 +2051,9 @@
           <li class="md-nav__item">
   <a href="#typeof" class="md-nav__link">
     <span class="md-ellipsis">
-      typeof
+      
+        typeof
+      
     </span>
   </a>
   
@@ -1799,7 +2062,9 @@
           <li class="md-nav__item">
   <a href="#string" class="md-nav__link">
     <span class="md-ellipsis">
-      string
+      
+        string
+      
     </span>
   </a>
   
@@ -1808,7 +2073,9 @@
           <li class="md-nav__item">
   <a href="#number" class="md-nav__link">
     <span class="md-ellipsis">
-      number
+      
+        number
+      
     </span>
   </a>
   
@@ -1817,7 +2084,9 @@
           <li class="md-nav__item">
   <a href="#boolean" class="md-nav__link">
     <span class="md-ellipsis">
-      boolean
+      
+        boolean
+      
     </span>
   </a>
   
@@ -1826,7 +2095,9 @@
           <li class="md-nav__item">
   <a href="#object" class="md-nav__link">
     <span class="md-ellipsis">
-      object
+      
+        object
+      
     </span>
   </a>
   
@@ -1835,7 +2106,9 @@
           <li class="md-nav__item">
   <a href="#collator" class="md-nav__link">
     <span class="md-ellipsis">
-      collator
+      
+        collator
+      
     </span>
   </a>
   
@@ -1844,7 +2117,9 @@
           <li class="md-nav__item">
   <a href="#format" class="md-nav__link">
     <span class="md-ellipsis">
-      format
+      
+        format
+      
     </span>
   </a>
   
@@ -1853,7 +2128,9 @@
           <li class="md-nav__item">
   <a href="#image" class="md-nav__link">
     <span class="md-ellipsis">
-      image
+      
+        image
+      
     </span>
   </a>
   
@@ -1862,7 +2139,9 @@
           <li class="md-nav__item">
   <a href="#number-format" class="md-nav__link">
     <span class="md-ellipsis">
-      number-format
+      
+        number-format
+      
     </span>
   </a>
   
@@ -1871,7 +2150,9 @@
           <li class="md-nav__item">
   <a href="#to-string" class="md-nav__link">
     <span class="md-ellipsis">
-      to-string
+      
+        to-string
+      
     </span>
   </a>
   
@@ -1880,7 +2161,9 @@
           <li class="md-nav__item">
   <a href="#to-number" class="md-nav__link">
     <span class="md-ellipsis">
-      to-number
+      
+        to-number
+      
     </span>
   </a>
   
@@ -1889,7 +2172,9 @@
           <li class="md-nav__item">
   <a href="#to-boolean" class="md-nav__link">
     <span class="md-ellipsis">
-      to-boolean
+      
+        to-boolean
+      
     </span>
   </a>
   
@@ -1898,7 +2183,9 @@
           <li class="md-nav__item">
   <a href="#to-color" class="md-nav__link">
     <span class="md-ellipsis">
-      to-color
+      
+        to-color
+      
     </span>
   </a>
   
@@ -1912,7 +2199,9 @@
         <li class="md-nav__item">
   <a href="#lookup" class="md-nav__link">
     <span class="md-ellipsis">
-      Lookup
+      
+        Lookup
+      
     </span>
   </a>
   
@@ -1922,7 +2211,9 @@
           <li class="md-nav__item">
   <a href="#at" class="md-nav__link">
     <span class="md-ellipsis">
-      at
+      
+        at
+      
     </span>
   </a>
   
@@ -1931,7 +2222,9 @@
           <li class="md-nav__item">
   <a href="#in" class="md-nav__link">
     <span class="md-ellipsis">
-      in
+      
+        in
+      
     </span>
   </a>
   
@@ -1940,7 +2233,9 @@
           <li class="md-nav__item">
   <a href="#index-of" class="md-nav__link">
     <span class="md-ellipsis">
-      index-of
+      
+        index-of
+      
     </span>
   </a>
   
@@ -1949,7 +2244,9 @@
           <li class="md-nav__item">
   <a href="#slice" class="md-nav__link">
     <span class="md-ellipsis">
-      slice
+      
+        slice
+      
     </span>
   </a>
   
@@ -1958,7 +2255,9 @@
           <li class="md-nav__item">
   <a href="#global-state" class="md-nav__link">
     <span class="md-ellipsis">
-      global-state
+      
+        global-state
+      
     </span>
   </a>
   
@@ -1967,7 +2266,9 @@
           <li class="md-nav__item">
   <a href="#get" class="md-nav__link">
     <span class="md-ellipsis">
-      get
+      
+        get
+      
     </span>
   </a>
   
@@ -1976,7 +2277,9 @@
           <li class="md-nav__item">
   <a href="#has" class="md-nav__link">
     <span class="md-ellipsis">
-      has
+      
+        has
+      
     </span>
   </a>
   
@@ -1985,7 +2288,9 @@
           <li class="md-nav__item">
   <a href="#length" class="md-nav__link">
     <span class="md-ellipsis">
-      length
+      
+        length
+      
     </span>
   </a>
   
@@ -1999,7 +2304,9 @@
         <li class="md-nav__item">
   <a href="#decision" class="md-nav__link">
     <span class="md-ellipsis">
-      Decision
+      
+        Decision
+      
     </span>
   </a>
   
@@ -2009,7 +2316,9 @@
           <li class="md-nav__item">
   <a href="#case" class="md-nav__link">
     <span class="md-ellipsis">
-      case
+      
+        case
+      
     </span>
   </a>
   
@@ -2018,7 +2327,9 @@
           <li class="md-nav__item">
   <a href="#match" class="md-nav__link">
     <span class="md-ellipsis">
-      match
+      
+        match
+      
     </span>
   </a>
   
@@ -2027,7 +2338,9 @@
           <li class="md-nav__item">
   <a href="#coalesce" class="md-nav__link">
     <span class="md-ellipsis">
-      coalesce
+      
+        coalesce
+      
     </span>
   </a>
   
@@ -2036,7 +2349,9 @@
           <li class="md-nav__item">
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      ==
+      
+        ==
+      
     </span>
   </a>
   
@@ -2045,7 +2360,9 @@
           <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      !=
+      
+        !=
+      
     </span>
   </a>
   
@@ -2054,7 +2371,9 @@
           <li class="md-nav__item">
   <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      &gt;
+      
+        &gt;
+      
     </span>
   </a>
   
@@ -2063,7 +2382,9 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      &lt;
+      
+        &lt;
+      
     </span>
   </a>
   
@@ -2072,7 +2393,9 @@
           <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      &gt;=
+      
+        &gt;=
+      
     </span>
   </a>
   
@@ -2081,7 +2404,9 @@
           <li class="md-nav__item">
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
-      &lt;=
+      
+        &lt;=
+      
     </span>
   </a>
   
@@ -2090,7 +2415,9 @@
           <li class="md-nav__item">
   <a href="#all" class="md-nav__link">
     <span class="md-ellipsis">
-      all
+      
+        all
+      
     </span>
   </a>
   
@@ -2099,7 +2426,9 @@
           <li class="md-nav__item">
   <a href="#any" class="md-nav__link">
     <span class="md-ellipsis">
-      any
+      
+        any
+      
     </span>
   </a>
   
@@ -2108,7 +2437,9 @@
           <li class="md-nav__item">
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
-      !
+      
+        !
+      
     </span>
   </a>
   
@@ -2117,7 +2448,9 @@
           <li class="md-nav__item">
   <a href="#within" class="md-nav__link">
     <span class="md-ellipsis">
-      within
+      
+        within
+      
     </span>
   </a>
   
@@ -2131,7 +2464,9 @@
         <li class="md-nav__item">
   <a href="#ramps-scales-curves" class="md-nav__link">
     <span class="md-ellipsis">
-      Ramps, scales, curves
+      
+        Ramps, scales, curves
+      
     </span>
   </a>
   
@@ -2141,7 +2476,9 @@
           <li class="md-nav__item">
   <a href="#step" class="md-nav__link">
     <span class="md-ellipsis">
-      step
+      
+        step
+      
     </span>
   </a>
   
@@ -2150,7 +2487,9 @@
           <li class="md-nav__item">
   <a href="#interpolate" class="md-nav__link">
     <span class="md-ellipsis">
-      interpolate
+      
+        interpolate
+      
     </span>
   </a>
   
@@ -2159,7 +2498,9 @@
           <li class="md-nav__item">
   <a href="#interpolate-hcl" class="md-nav__link">
     <span class="md-ellipsis">
-      interpolate-hcl
+      
+        interpolate-hcl
+      
     </span>
   </a>
   
@@ -2168,7 +2509,9 @@
           <li class="md-nav__item">
   <a href="#interpolate-lab" class="md-nav__link">
     <span class="md-ellipsis">
-      interpolate-lab
+      
+        interpolate-lab
+      
     </span>
   </a>
   
@@ -2182,7 +2525,9 @@
         <li class="md-nav__item">
   <a href="#math" class="md-nav__link">
     <span class="md-ellipsis">
-      Math
+      
+        Math
+      
     </span>
   </a>
   
@@ -2192,7 +2537,9 @@
           <li class="md-nav__item">
   <a href="#ln2" class="md-nav__link">
     <span class="md-ellipsis">
-      ln2
+      
+        ln2
+      
     </span>
   </a>
   
@@ -2201,7 +2548,9 @@
           <li class="md-nav__item">
   <a href="#pi" class="md-nav__link">
     <span class="md-ellipsis">
-      pi
+      
+        pi
+      
     </span>
   </a>
   
@@ -2210,7 +2559,9 @@
           <li class="md-nav__item">
   <a href="#e" class="md-nav__link">
     <span class="md-ellipsis">
-      e
+      
+        e
+      
     </span>
   </a>
   
@@ -2219,7 +2570,9 @@
           <li class="md-nav__item">
   <a href="#_8" class="md-nav__link">
     <span class="md-ellipsis">
-      +
+      
+        +
+      
     </span>
   </a>
   
@@ -2228,7 +2581,9 @@
           <li class="md-nav__item">
   <a href="#_9" class="md-nav__link">
     <span class="md-ellipsis">
-      *
+      
+        *
+      
     </span>
   </a>
   
@@ -2237,7 +2592,9 @@
           <li class="md-nav__item">
   <a href="#-" class="md-nav__link">
     <span class="md-ellipsis">
-      -
+      
+        -
+      
     </span>
   </a>
   
@@ -2246,7 +2603,9 @@
           <li class="md-nav__item">
   <a href="#_10" class="md-nav__link">
     <span class="md-ellipsis">
-      /
+      
+        /
+      
     </span>
   </a>
   
@@ -2255,7 +2614,9 @@
           <li class="md-nav__item">
   <a href="#_11" class="md-nav__link">
     <span class="md-ellipsis">
-      %
+      
+        %
+      
     </span>
   </a>
   
@@ -2264,7 +2625,9 @@
           <li class="md-nav__item">
   <a href="#_12" class="md-nav__link">
     <span class="md-ellipsis">
-      ^
+      
+        ^
+      
     </span>
   </a>
   
@@ -2273,7 +2636,9 @@
           <li class="md-nav__item">
   <a href="#sqrt" class="md-nav__link">
     <span class="md-ellipsis">
-      sqrt
+      
+        sqrt
+      
     </span>
   </a>
   
@@ -2282,7 +2647,9 @@
           <li class="md-nav__item">
   <a href="#log10" class="md-nav__link">
     <span class="md-ellipsis">
-      log10
+      
+        log10
+      
     </span>
   </a>
   
@@ -2291,7 +2658,9 @@
           <li class="md-nav__item">
   <a href="#ln" class="md-nav__link">
     <span class="md-ellipsis">
-      ln
+      
+        ln
+      
     </span>
   </a>
   
@@ -2300,7 +2669,9 @@
           <li class="md-nav__item">
   <a href="#log2" class="md-nav__link">
     <span class="md-ellipsis">
-      log2
+      
+        log2
+      
     </span>
   </a>
   
@@ -2309,7 +2680,9 @@
           <li class="md-nav__item">
   <a href="#sin" class="md-nav__link">
     <span class="md-ellipsis">
-      sin
+      
+        sin
+      
     </span>
   </a>
   
@@ -2318,7 +2691,9 @@
           <li class="md-nav__item">
   <a href="#cos" class="md-nav__link">
     <span class="md-ellipsis">
-      cos
+      
+        cos
+      
     </span>
   </a>
   
@@ -2327,7 +2702,9 @@
           <li class="md-nav__item">
   <a href="#tan" class="md-nav__link">
     <span class="md-ellipsis">
-      tan
+      
+        tan
+      
     </span>
   </a>
   
@@ -2336,7 +2713,9 @@
           <li class="md-nav__item">
   <a href="#asin" class="md-nav__link">
     <span class="md-ellipsis">
-      asin
+      
+        asin
+      
     </span>
   </a>
   
@@ -2345,7 +2724,9 @@
           <li class="md-nav__item">
   <a href="#acos" class="md-nav__link">
     <span class="md-ellipsis">
-      acos
+      
+        acos
+      
     </span>
   </a>
   
@@ -2354,7 +2735,9 @@
           <li class="md-nav__item">
   <a href="#atan" class="md-nav__link">
     <span class="md-ellipsis">
-      atan
+      
+        atan
+      
     </span>
   </a>
   
@@ -2363,7 +2746,9 @@
           <li class="md-nav__item">
   <a href="#min" class="md-nav__link">
     <span class="md-ellipsis">
-      min
+      
+        min
+      
     </span>
   </a>
   
@@ -2372,7 +2757,9 @@
           <li class="md-nav__item">
   <a href="#max" class="md-nav__link">
     <span class="md-ellipsis">
-      max
+      
+        max
+      
     </span>
   </a>
   
@@ -2381,7 +2768,9 @@
           <li class="md-nav__item">
   <a href="#round" class="md-nav__link">
     <span class="md-ellipsis">
-      round
+      
+        round
+      
     </span>
   </a>
   
@@ -2390,7 +2779,9 @@
           <li class="md-nav__item">
   <a href="#abs" class="md-nav__link">
     <span class="md-ellipsis">
-      abs
+      
+        abs
+      
     </span>
   </a>
   
@@ -2399,7 +2790,9 @@
           <li class="md-nav__item">
   <a href="#ceil" class="md-nav__link">
     <span class="md-ellipsis">
-      ceil
+      
+        ceil
+      
     </span>
   </a>
   
@@ -2408,7 +2801,9 @@
           <li class="md-nav__item">
   <a href="#floor" class="md-nav__link">
     <span class="md-ellipsis">
-      floor
+      
+        floor
+      
     </span>
   </a>
   
@@ -2417,7 +2812,9 @@
           <li class="md-nav__item">
   <a href="#distance" class="md-nav__link">
     <span class="md-ellipsis">
-      distance
+      
+        distance
+      
     </span>
   </a>
   
@@ -2431,7 +2828,9 @@
         <li class="md-nav__item">
   <a href="#color" class="md-nav__link">
     <span class="md-ellipsis">
-      Color
+      
+        Color
+      
     </span>
   </a>
   
@@ -2441,7 +2840,9 @@
           <li class="md-nav__item">
   <a href="#to-rgba" class="md-nav__link">
     <span class="md-ellipsis">
-      to-rgba
+      
+        to-rgba
+      
     </span>
   </a>
   
@@ -2450,7 +2851,9 @@
           <li class="md-nav__item">
   <a href="#rgb" class="md-nav__link">
     <span class="md-ellipsis">
-      rgb
+      
+        rgb
+      
     </span>
   </a>
   
@@ -2459,7 +2862,9 @@
           <li class="md-nav__item">
   <a href="#rgba" class="md-nav__link">
     <span class="md-ellipsis">
-      rgba
+      
+        rgba
+      
     </span>
   </a>
   
@@ -2473,7 +2878,9 @@
         <li class="md-nav__item">
   <a href="#feature-data" class="md-nav__link">
     <span class="md-ellipsis">
-      Feature data
+      
+        Feature data
+      
     </span>
   </a>
   
@@ -2483,7 +2890,9 @@
           <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
-      properties
+      
+        properties
+      
     </span>
   </a>
   
@@ -2492,7 +2901,9 @@
           <li class="md-nav__item">
   <a href="#feature-state" class="md-nav__link">
     <span class="md-ellipsis">
-      feature-state
+      
+        feature-state
+      
     </span>
   </a>
   
@@ -2501,7 +2912,9 @@
           <li class="md-nav__item">
   <a href="#geometry-type" class="md-nav__link">
     <span class="md-ellipsis">
-      geometry-type
+      
+        geometry-type
+      
     </span>
   </a>
   
@@ -2510,7 +2923,9 @@
           <li class="md-nav__item">
   <a href="#id" class="md-nav__link">
     <span class="md-ellipsis">
-      id
+      
+        id
+      
     </span>
   </a>
   
@@ -2519,7 +2934,9 @@
           <li class="md-nav__item">
   <a href="#line-progress" class="md-nav__link">
     <span class="md-ellipsis">
-      line-progress
+      
+        line-progress
+      
     </span>
   </a>
   
@@ -2528,7 +2945,9 @@
           <li class="md-nav__item">
   <a href="#accumulated" class="md-nav__link">
     <span class="md-ellipsis">
-      accumulated
+      
+        accumulated
+      
     </span>
   </a>
   
@@ -2542,7 +2961,9 @@
         <li class="md-nav__item">
   <a href="#zoom" class="md-nav__link">
     <span class="md-ellipsis">
-      Zoom
+      
+        Zoom
+      
     </span>
   </a>
   
@@ -2552,7 +2973,9 @@
           <li class="md-nav__item">
   <a href="#zoom_1" class="md-nav__link">
     <span class="md-ellipsis">
-      zoom
+      
+        zoom
+      
     </span>
   </a>
   
@@ -2566,7 +2989,9 @@
         <li class="md-nav__item">
   <a href="#heatmap" class="md-nav__link">
     <span class="md-ellipsis">
-      Heatmap
+      
+        Heatmap
+      
     </span>
   </a>
   
@@ -2576,7 +3001,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-density" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-density
+      
+        heatmap-density
+      
     </span>
   </a>
   
@@ -2590,7 +3017,9 @@
         <li class="md-nav__item">
   <a href="#color-relief" class="md-nav__link">
     <span class="md-ellipsis">
-      Color Relief
+      
+        Color Relief
+      
     </span>
   </a>
   
@@ -2600,7 +3029,9 @@
           <li class="md-nav__item">
   <a href="#elevation" class="md-nav__link">
     <span class="md-ellipsis">
-      elevation
+      
+        elevation
+      
     </span>
   </a>
   
@@ -2614,7 +3045,9 @@
         <li class="md-nav__item">
   <a href="#string_1" class="md-nav__link">
     <span class="md-ellipsis">
-      String
+      
+        String
+      
     </span>
   </a>
   
@@ -2624,7 +3057,9 @@
           <li class="md-nav__item">
   <a href="#is-supported-script" class="md-nav__link">
     <span class="md-ellipsis">
-      is-supported-script
+      
+        is-supported-script
+      
     </span>
   </a>
   
@@ -2633,7 +3068,9 @@
           <li class="md-nav__item">
   <a href="#upcase" class="md-nav__link">
     <span class="md-ellipsis">
-      upcase
+      
+        upcase
+      
     </span>
   </a>
   
@@ -2642,7 +3079,9 @@
           <li class="md-nav__item">
   <a href="#downcase" class="md-nav__link">
     <span class="md-ellipsis">
-      downcase
+      
+        downcase
+      
     </span>
   </a>
   
@@ -2651,7 +3090,9 @@
           <li class="md-nav__item">
   <a href="#concat" class="md-nav__link">
     <span class="md-ellipsis">
-      concat
+      
+        concat
+      
     </span>
   </a>
   
@@ -2660,7 +3101,9 @@
           <li class="md-nav__item">
   <a href="#resolved-locale" class="md-nav__link">
     <span class="md-ellipsis">
-      resolved-locale
+      
+        resolved-locale
+      
     </span>
   </a>
   
@@ -2681,11 +3124,10 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
-
-
   
   
 
@@ -2789,12 +3231,12 @@
 <li><a href="https://maplibre.org/maplibre-gl-js/docs/examples/visualize-population-density/">Visualize population density</a></li>
 </ul>
 <p>Syntax:
-<div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">[</span><span class="s2">&quot;let&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">var_1_name</span><span class="p">,</span><span class="w"> </span><span class="nx">var_1_value</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">var_n_name</span><span class="p">,</span><span class="w"> </span><span class="nx">var_n_value</span><span class="p">,</span><span class="w"> </span><span class="nx">expression</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="p">[</span><span class="s2">&quot;let&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">var_name_1</span><span class="p">,</span><span class="w"> </span><span class="nx">var_value_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">var_name_n</span><span class="p">,</span><span class="w"> </span><span class="nx">var_value_n</span><span class="p">,</span><span class="w"> </span><span class="nx">expression</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>var_i_name</code>: <em>string literal</em> — The name of the i-th variable.</li>
-<li><code>var_i_value</code>: <em>any</em> — The value of the i-th variable.</li>
-<li><code>expression</code>: <em>any</em> — The expression within which the named variables can be referenced.</li>
+<li><code>var_name_i</code>: <code>string literal</code>- The name of the i-th variable.</li>
+<li><code>var_value_i</code>: <code>any</code>- The value of the i-th variable.</li>
+<li><code>expression</code>: <code>any</code>- The expression within which the named variables can be referenced.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -2839,7 +3281,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="p">[</span><span class="s2">&quot;var&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">var_name</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>var_name</code>: <em>string literal</em> — The name of the variable bound using <code>let</code>.</li>
+<li><code>var_name</code>: <code>string literal</code>- The name of the variable bound using <code>let</code>.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;var&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;density&quot;</span><span class="p">]</span>
@@ -2873,8 +3315,8 @@
 </span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="p">[</span><span class="s2">&quot;literal&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">json_array</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">array</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>json_object</code>: <em>JSON object</em></li>
-<li><code>json_array</code>: <em>JSON array</em></li>
+<li><code>json_object</code>: <code>JSON object</code></li>
+<li><code>json_array</code>: <code>JSON array</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -2908,9 +3350,9 @@
 </span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a><span class="p">[</span><span class="s2">&quot;array&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">type</span><span class="p">,</span><span class="w"> </span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">type</span><span class="p">,</span><span class="w"> </span><span class="nx">length</span><span class="o">&gt;</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value</code>: <em>any</em></li>
-<li><code>type</code>: <em>"string" | "number" | "boolean"</em> — The asserted type of the input array.</li>
-<li><code>length</code>: <em>number literal</em> — The asserted length of the input array.</li>
+<li><code>value</code>: <code>any</code></li>
+<li><code>type</code>: <code>string | number | boolean</code>- The asserted type of the input array.</li>
+<li><code>length</code>: <code>number literal</code>- The asserted length of the input array.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;array&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;literal&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;c&quot;</span><span class="p">]]]</span>
@@ -2939,7 +3381,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a><span class="p">[</span><span class="s2">&quot;typeof&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value</code>: <em>any</em></li>
+<li><code>value</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;typeof&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">]]</span>
@@ -2968,7 +3410,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="p">[</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">value_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value_i</code>: <em>any</em></li>
+<li><code>value_i</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;string&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">]]</span>
@@ -2997,7 +3439,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="p">[</span><span class="s2">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">value_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value_i</code>: <em>any</em></li>
+<li><code>value_i</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;number&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;population&quot;</span><span class="p">]]</span>
@@ -3029,7 +3471,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="p">[</span><span class="s2">&quot;boolean&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">value_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value_i</code>: <em>any</em></li>
+<li><code>value_i</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;boolean&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;feature-state&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;hover&quot;</span><span class="p">],</span><span class="w"> </span><span class="kc">false</span><span class="p">]</span>
@@ -3058,7 +3500,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="p">[</span><span class="s2">&quot;object&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">value_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">object</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value_i</code>: <em>any</em></li>
+<li><code>value_i</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;object&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;some-property&quot;</span><span class="p">]]</span>
@@ -3082,12 +3524,20 @@
 </tbody>
 </table>
 <h3 id="collator">collator<a class="headerlink" href="#collator" title="Permanent link">&para;</a></h3>
-<p>Returns a <code>collator</code> for use in locale-dependent comparison operations. The <code>case-sensitive</code> and <code>diacritic-sensitive</code> options default to <code>false</code>. The <code>locale</code> argument specifies the IETF language tag of the locale to use. If none is provided, the default locale is used. If the requested locale is not available, the <code>collator</code> will use a system-defined fallback locale. Use <code>resolved-locale</code> to test the results of locale fallback behavior.</p>
+<p>Returns a <code>collator</code> for use in locale-dependent comparison operations. Use <code>resolved-locale</code> to test the results of locale fallback behavior.</p>
 <p>Syntax:
 <div class="language-js highlight"><pre><span></span><code><span id="__span-27-1"><a id="__codelineno-27-1" name="__codelineno-27-1" href="#__codelineno-27-1"></a><span class="p">[</span><span class="s2">&quot;collator&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">options</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">collator</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>options</code>: <em>{ "case-sensitive"?: boolean, "diacritic-sensitive"?: boolean, "locale"?: string }</em></li>
+<li>
+<p><code>options</code>: <code>{case-sensitive?: boolean, diacritic-sensitive?: boolean, locale?: string}</code><br />
+Parameters:</p>
+<ul>
+<li><code>case-sensitive</code>: <code>boolean</code> - If characters of different case-ness are considered different</li>
+<li><code>diacritic-sensitive</code>: <code>boolean</code> - If characters with different diacritics are considered different</li>
+<li><code>locale</code>: <code>string</code> - IETF language tag of the locale to use. If none is provided, the default locale is used. If the requested locale is not available, the <code>collator</code> will use a system-defined fallback locale.</li>
+</ul>
+</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-28-1"><a id="__codelineno-28-1" name="__codelineno-28-1" href="#__codelineno-28-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -3118,29 +3568,8 @@
 </tbody>
 </table>
 <h3 id="format">format<a class="headerlink" href="#format" title="Permanent link">&para;</a></h3>
-<p>Returns a <code>formatted</code> string for displaying mixed-format text in the <code>text-field</code> property. The input may contain a string literal or expression, including an <a href="#image"><code>'image'</code></a> expression. Strings may be followed by a style override object that supports the following properties:</p>
+<p>Returns a <code>formatted</code> string for displaying mixed-format text in the <code>text-field</code> property. The input may contain a string literal or expression, including an <a href="#image"><code>'image'</code></a> expression. Strings may be followed by a style override object.</p>
 <ul>
-<li>
-<p><code>"text-font"</code>: Overrides the font stack specified by the root layout property.</p>
-</li>
-<li>
-<p><code>"text-color"</code>: Overrides the color specified by the root paint property.</p>
-</li>
-<li>
-<p><code>"font-scale"</code>: Applies a scaling factor on <code>text-size</code> as specified by the root layout property.</p>
-</li>
-<li>
-<p><code>"vertical-align"</code>: Aligns vertically text section or image in relation to the row it belongs to. Possible values are: </p>
-<ul>
-<li><code>"bottom"</code> <em>default</em>: align the bottom of this section with the bottom of other sections.
-<img alt="Visual representation of bottom alignment" src="https://github.com/user-attachments/assets/0474a2fd-a4b2-417c-9187-7a13a28695bc"/></li>
-<li><code>"center"</code>: align the center of this section with the center of other sections.
-<img alt="Visual representation of center alignment" src="https://github.com/user-attachments/assets/92237455-be6d-4c5d-b8f6-8127effc1950"/></li>
-<li><code>"top"</code>: align the top of this section with the top of other sections.
-<img alt="Visual representation of top alignment" src="https://github.com/user-attachments/assets/45dccb28-d977-4abb-a006-4ea9792b7c53"/></li>
-<li>Refer to <a href="https://github.com/maplibre/maplibre-style-spec/issues/832">the design proposal</a> for more details.</li>
-</ul>
-</li>
 <li>
 <p><a href="https://maplibre.org/maplibre-gl-js/docs/examples/change-case-of-labels/">Change the case of labels</a></p>
 </li>
@@ -3152,8 +3581,26 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-29-1"><a id="__codelineno-29-1" name="__codelineno-29-1" href="#__codelineno-29-1"></a><span class="p">[</span><span class="s2">&quot;format&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">style_overrides_1</span><span class="o">?</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">input_n</span><span class="p">,</span><span class="w"> </span><span class="nx">style_overrides_n</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">formatted</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_i</code>: <em>string | image</em></li>
-<li><code>style_overrides_i</code>: <em>{ "text-font"?: string, "text-color"?: color, "font-scale"?: number, "vertical-align"?: "bottom" | "center" | "top" }</em></li>
+<li><code>input_i</code>: <code>string | image</code></li>
+<li>
+<p><code>style_overrides_i</code>: <code>{text-font?: string, text-color?: color, font-scale?: number, vertical-align?: "bottom" | "center" | "top"}</code><br />
+Parameters:</p>
+<ul>
+<li><code>text-font</code>: <code>string</code> - Overrides the font stack specified by the root layout property.</li>
+<li><code>text-color</code>: <code>color</code> - Overrides the color specified by the root paint property.</li>
+<li><code>font-scale</code>: <code>number</code> - Applies a scaling factor on <code>text-size</code> as specified by the root layout property.</li>
+<li><code>vertical-align</code>: <code>"bottom" | "center" | "top"</code> - Aligns a vertical text section or image in relation to the row it belongs to. Refer to <a href="https://github.com/maplibre/maplibre-style-spec/issues/832">the design proposal</a> for more details.<br />
+    Possible values are:<ul>
+<li><code>"bottom"</code> <em>default</em> - align the bottom of this section with the bottom of other sections.
+<img alt="Visual representation of bottom alignment" src="https://github.com/user-attachments/assets/0474a2fd-a4b2-417c-9187-7a13a28695bc" /></li>
+<li><code>"center"</code> - align the center of this section with the center of other sections.
+<img alt="Visual representation of center alignment" src="https://github.com/user-attachments/assets/92237455-be6d-4c5d-b8f6-8127effc1950" /></li>
+<li><code>"top"</code> - align the top of this section with the top of other sections.
+<img alt="Visual representation of top alignment" src="https://github.com/user-attachments/assets/45dccb28-d977-4abb-a006-4ea9792b7c53" /></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-30-1"><a id="__codelineno-30-1" name="__codelineno-30-1" href="#__codelineno-30-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -3223,7 +3670,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-31-1"><a id="__codelineno-31-1" name="__codelineno-31-1" href="#__codelineno-31-1"></a><span class="p">[</span><span class="s2">&quot;image&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">image_name</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">image</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>image_name</code>: <em>string</em></li>
+<li><code>image_name</code>: <code>string</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-32-1"><a id="__codelineno-32-1" name="__codelineno-32-1" href="#__codelineno-32-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;image&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;marker_15&quot;</span><span class="p">]</span>
@@ -3247,7 +3694,7 @@
 </tbody>
 </table>
 <h3 id="number-format">number-format<a class="headerlink" href="#number-format" title="Permanent link">&para;</a></h3>
-<p>Converts the input number into a string representation using the providing formatting rules. If set, the <code>locale</code> argument specifies the locale to use, as a BCP 47 language tag. If set, the <code>currency</code> argument specifies an ISO 4217 code to use for currency-style formatting. If set, the <code>min-fraction-digits</code> and <code>max-fraction-digits</code> arguments specify the minimum and maximum number of fractional digits to include.</p>
+<p>Converts the input number into a string representation using the provided format_options.</p>
 <ul>
 <li><a href="https://maplibre.org/maplibre-gl-js/docs/examples/display-html-clusters-with-custom-properties/">Display HTML clusters with custom properties</a></li>
 </ul>
@@ -3255,8 +3702,18 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-33-1"><a id="__codelineno-33-1" name="__codelineno-33-1" href="#__codelineno-33-1"></a><span class="p">[</span><span class="s2">&quot;number-format&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">format_options</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
-<li><code>format_options</code>: <em>{ "locale"?: string, "currency"?: string, "min-fraction-digits"?: number, "max-fraction-digits"?: number }</em></li>
+<li><code>input</code>: <code>number</code>- number to format</li>
+<li>
+<p><code>format_options</code>: <code>{locale?: string, currency?: string, unit?: string, min-fraction-digits?: number, max-fraction-digits?: number}</code>- Format options for the number<br />
+Parameters:</p>
+<ul>
+<li><code>locale</code>: <code>string</code> - Specifies the locale to use, as a BCP 47 language tag</li>
+<li><code>currency</code>: <code>string</code> - An ISO 4217 code to use for currency-style formatting</li>
+<li><code>unit</code>: <code>string</code> - A CLDR or ECMA-402 unit to use for quantity-style formatting</li>
+<li><code>min-fraction-digits</code>: <code>number</code> - Minimum number of fractional digits to include</li>
+<li><code>max-fraction-digits</code>: <code>number</code> - Maximum number of fractional digits to include</li>
+</ul>
+</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-34-1"><a id="__codelineno-34-1" name="__codelineno-34-1" href="#__codelineno-34-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -3281,6 +3738,12 @@
 <td>8.4.0</td>
 <td>✅</td>
 </tr>
+<tr>
+<td><code>unit</code> property</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/7024">#7024</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/4071">#4071</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/4071">#4071</a>)</td>
+</tr>
 </tbody>
 </table>
 <h3 id="to-string">to-string<a class="headerlink" href="#to-string" title="Permanent link">&para;</a></h3>
@@ -3292,7 +3755,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-35-1"><a id="__codelineno-35-1" name="__codelineno-35-1" href="#__codelineno-35-1"></a><span class="p">[</span><span class="s2">&quot;to-string&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value</code>: <em>any</em></li>
+<li><code>value</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-36-1"><a id="__codelineno-36-1" name="__codelineno-36-1" href="#__codelineno-36-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;to-string&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">]]</span>
@@ -3321,7 +3784,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-37-1"><a id="__codelineno-37-1" name="__codelineno-37-1" href="#__codelineno-37-1"></a><span class="p">[</span><span class="s2">&quot;to-number&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">value_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value_i</code>: <em>any</em></li>
+<li><code>value_i</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-38-1"><a id="__codelineno-38-1" name="__codelineno-38-1" href="#__codelineno-38-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;to-number&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;someProperty&quot;</span><span class="p">]</span>
@@ -3350,7 +3813,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-39-1"><a id="__codelineno-39-1" name="__codelineno-39-1" href="#__codelineno-39-1"></a><span class="p">[</span><span class="s2">&quot;to-boolean&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value</code>: <em>any</em></li>
+<li><code>value</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-40-1"><a id="__codelineno-40-1" name="__codelineno-40-1" href="#__codelineno-40-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;to-boolean&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;someProperty&quot;</span><span class="p">]</span>
@@ -3382,7 +3845,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-41-1"><a id="__codelineno-41-1" name="__codelineno-41-1" href="#__codelineno-41-1"></a><span class="p">[</span><span class="s2">&quot;to-color&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">value_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">value_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">color</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>value_i</code>: <em>any</em></li>
+<li><code>value_i</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-42-1"><a id="__codelineno-42-1" name="__codelineno-42-1" href="#__codelineno-42-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;to-color&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#edf8e9&quot;</span><span class="p">]</span>
@@ -3412,8 +3875,8 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-43-1"><a id="__codelineno-43-1" name="__codelineno-43-1" href="#__codelineno-43-1"></a><span class="p">[</span><span class="s2">&quot;at&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">,</span><span class="w"> </span><span class="nx">array</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">T</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>index</code>: <em>number</em> — The index into <code>array</code>.</li>
-<li><code>array</code>: <em>array&lt;T&gt;</em> — The array of items to retrieve the specified item from.</li>
+<li><code>index</code>: <code>number</code>- The index into <code>array</code>.</li>
+<li><code>array</code>: <code>array&lt;T&gt;</code>- The array of items to retrieve the specified item from.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-44-1"><a id="__codelineno-44-1" name="__codelineno-44-1" href="#__codelineno-44-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;at&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;literal&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;b&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;c&quot;</span><span class="p">]]]</span>
@@ -3446,10 +3909,10 @@
 </span><span id="__span-45-2"><a id="__codelineno-45-2" name="__codelineno-45-2" href="#__codelineno-45-2"></a><span class="p">[</span><span class="s2">&quot;in&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">substring</span><span class="p">,</span><span class="w"> </span><span class="nx">string</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>item</code>: <em>T</em> — The needle to search for within <code>array</code>.</li>
-<li><code>array</code>: <em>array&lt;T&gt;</em> — The haystack through which to search for <code>item</code>.</li>
-<li><code>substring</code>: <em>string</em> — The needle to search for within <code>string</code>.</li>
-<li><code>string</code>: <em>string</em> — The haystack through which to search for <code>substring</code>.</li>
+<li><code>item</code>: <code>T</code>- The needle to search for within <code>array</code>.</li>
+<li><code>array</code>: <code>array&lt;T&gt;</code>- The haystack through which to search for <code>item</code>.</li>
+<li><code>substring</code>: <code>string</code>- The needle to search for within <code>string</code>.</li>
+<li><code>string</code>: <code>string</code>- The haystack through which to search for <code>substring</code>.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-46-1"><a id="__codelineno-46-1" name="__codelineno-46-1" href="#__codelineno-46-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;in&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;$type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Point&quot;</span><span class="p">]</span>
@@ -3479,11 +3942,11 @@
 </span><span id="__span-47-2"><a id="__codelineno-47-2" name="__codelineno-47-2" href="#__codelineno-47-2"></a><span class="p">[</span><span class="s2">&quot;index-of&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">substring</span><span class="p">,</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w"> </span><span class="nx">from_index</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>item</code>: <em>T</em> — The needle to search for within <code>array</code>.</li>
-<li><code>array</code>: <em>array&lt;T&gt;</em> — The haystack through which to search for <code>item</code>.</li>
-<li><code>substring</code>: <em>string</em> — The needle to search for within <code>string</code>.</li>
-<li><code>string</code>: <em>string</em> — The haystack through which to search for <code>substring</code>.</li>
-<li><code>from_index</code>: <em>number</em> — The index from where to begin the search.</li>
+<li><code>item</code>: <code>T</code>- The needle to search for within <code>array</code>.</li>
+<li><code>array</code>: <code>array&lt;T&gt;</code>- The haystack through which to search for <code>item</code>.</li>
+<li><code>substring</code>: <code>string</code>- The needle to search for within <code>string</code>.</li>
+<li><code>string</code>: <code>string</code>- The haystack through which to search for <code>substring</code>.</li>
+<li><code>from_index</code>: <code>number</code>- The index from where to begin the search.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-48-1"><a id="__codelineno-48-1" name="__codelineno-48-1" href="#__codelineno-48-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;index-of&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;baz&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;bar&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;hello&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;foo&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;world&quot;</span><span class="p">]]</span>
@@ -3513,10 +3976,10 @@
 </span><span id="__span-49-2"><a id="__codelineno-49-2" name="__codelineno-49-2" href="#__codelineno-49-2"></a><span class="p">[</span><span class="s2">&quot;slice&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">string</span><span class="p">,</span><span class="w"> </span><span class="nx">start_index</span><span class="p">,</span><span class="w"> </span><span class="nx">end_index</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>array</code>: <em>array&lt;T&gt;</em> — The original array from which to extract the subarray.</li>
-<li><code>string</code>: <em>string</em> — The original string from which to extract the substring.</li>
-<li><code>start_index</code>: <em>number</em> — The inclusive index from which <code>slice</code> extracts items or characters from the subarray or substring.</li>
-<li><code>end_index</code>: <em>number</em> — The non-inclusive index up to which <code>slice</code> extracts items or characters from the subarray or substring.</li>
+<li><code>array</code>: <code>array&lt;T&gt;</code>- The original array from which to extract the subarray.</li>
+<li><code>string</code>: <code>string</code>- The original string from which to extract the substring.</li>
+<li><code>start_index</code>: <code>number</code>- The inclusive index from which <code>slice</code> extracts items or characters from the subarray or substring.</li>
+<li><code>end_index</code>: <code>number</code>- The non-inclusive index up to which <code>slice</code> extracts items or characters from the subarray or substring.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-50-1"><a id="__codelineno-50-1" name="__codelineno-50-1" href="#__codelineno-50-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;slice&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span>
@@ -3545,7 +4008,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-51-1"><a id="__codelineno-51-1" name="__codelineno-51-1" href="#__codelineno-51-1"></a><span class="p">[</span><span class="s2">&quot;global-state&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">property_name</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>property_name</code>: <em>string literal</em> — The name of the global state property to retrieve.</li>
+<li><code>property_name</code>: <code>string literal</code>- The name of the global state property to retrieve.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-52-1"><a id="__codelineno-52-1" name="__codelineno-52-1" href="#__codelineno-52-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;global-state&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;someProperty&quot;</span><span class="p">]</span>
@@ -3562,7 +4025,7 @@
 <tbody>
 <tr>
 <td>basic functionality</td>
-<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/4964">#4964</a>)</td>
+<td>5.6.0</td>
 <td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 <td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
@@ -3585,8 +4048,8 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-53-1"><a id="__codelineno-53-1" name="__codelineno-53-1" href="#__codelineno-53-1"></a><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">property_name</span><span class="p">,</span><span class="w"> </span><span class="nx">object</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>property_name</code>: <em>string</em> — The name of the property to retrieve the value of.</li>
-<li><code>object</code>: <em>object</em> — The object to retrieve the value from.</li>
+<li><code>property_name</code>: <code>string</code>- The name of the property to retrieve the value of.</li>
+<li><code>object</code>: <code>object</code>- The object to retrieve the value from.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-54-1"><a id="__codelineno-54-1" name="__codelineno-54-1" href="#__codelineno-54-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;someProperty&quot;</span><span class="p">]</span>
@@ -3618,8 +4081,8 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-55-1"><a id="__codelineno-55-1" name="__codelineno-55-1" href="#__codelineno-55-1"></a><span class="p">[</span><span class="s2">&quot;has&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">property_name</span><span class="p">,</span><span class="w"> </span><span class="nx">object</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>property_name</code>: <em>string</em> — The name of the property to test for the presence of.</li>
-<li><code>object</code>: <em>object</em> — The object in which to test for the presence of the <code>property_name</code> property.</li>
+<li><code>property_name</code>: <code>string</code>- The name of the property to test for the presence of.</li>
+<li><code>object</code>: <code>object</code>- The object in which to test for the presence of the <code>property_name</code> property.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-56-1"><a id="__codelineno-56-1" name="__codelineno-56-1" href="#__codelineno-56-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;has&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;someProperty&quot;</span><span class="p">]</span>
@@ -3648,7 +4111,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-57-1"><a id="__codelineno-57-1" name="__codelineno-57-1" href="#__codelineno-57-1"></a><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">array_or_string</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>array_or_string</code>: <em>array | string</em></li>
+<li><code>array_or_string</code>: <code>array | string</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-58-1"><a id="__codelineno-58-1" name="__codelineno-58-1" href="#__codelineno-58-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;length&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;myArray&quot;</span><span class="p">]]</span>
@@ -3686,9 +4149,9 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-59-1"><a id="__codelineno-59-1" name="__codelineno-59-1" href="#__codelineno-59-1"></a><span class="p">[</span><span class="s2">&quot;case&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">condition_1</span><span class="p">,</span><span class="w"> </span><span class="nx">output_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">condition_n</span><span class="p">,</span><span class="w"> </span><span class="nx">output_n</span><span class="p">,</span><span class="w"> </span><span class="nx">fallback</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>condition_i</code>: <em>boolean</em></li>
-<li><code>output_i</code>: <em>any</em></li>
-<li><code>fallback</code>: <em>any</em> — The result when no condition evaluates to true.</li>
+<li><code>condition_i</code>: <code>boolean</code></li>
+<li><code>output_i</code>: <code>any</code></li>
+<li><code>fallback</code>: <code>any</code>- The result when no condition evaluates to true.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-60-1"><a id="__codelineno-60-1" name="__codelineno-60-1" href="#__codelineno-60-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -3731,10 +4194,10 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-61-1"><a id="__codelineno-61-1" name="__codelineno-61-1" href="#__codelineno-61-1"></a><span class="p">[</span><span class="s2">&quot;match&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">label_1</span><span class="p">,</span><span class="w"> </span><span class="nx">output_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">label_n</span><span class="p">,</span><span class="w"> </span><span class="nx">output_n</span><span class="p">,</span><span class="w"> </span><span class="nx">fallback</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>string | number</em> — Any expression.</li>
-<li><code>label_i</code>: <em>string literal | number literal | array&lt;string literal&gt; | array&lt;number literal&gt;</em> — The i-th literal value or array of literal values to match the input against.</li>
-<li><code>output_i</code>: <em>any</em> — The result when the i-th label is the first label to match the input.</li>
-<li><code>fallback</code>: <em>any</em> — The result when no label matches the input.</li>
+<li><code>input</code>: <code>string | number</code>- Any expression.</li>
+<li><code>label_i</code>: <code>string literal | number literal | array&lt;string literal&gt; | array&lt;number literal&gt;</code>- The i-th literal value or array of literal values to match the input against.</li>
+<li><code>output_i</code>: <code>any</code>- The result when the i-th label is the first label to match the input.</li>
+<li><code>fallback</code>: <code>any</code>- The result when no label matches the input.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-62-1"><a id="__codelineno-62-1" name="__codelineno-62-1" href="#__codelineno-62-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -3774,7 +4237,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-63-1"><a id="__codelineno-63-1" name="__codelineno-63-1" href="#__codelineno-63-1"></a><span class="p">[</span><span class="s2">&quot;coalesce&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">expression_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">expression_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>expression_i</code>: <em>any</em></li>
+<li><code>expression_i</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-64-1"><a id="__codelineno-64-1" name="__codelineno-64-1" href="#__codelineno-64-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -3821,9 +4284,9 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-65-1"><a id="__codelineno-65-1" name="__codelineno-65-1" href="#__codelineno-65-1"></a><span class="p">[</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">input_2</span><span class="p">,</span><span class="w"> </span><span class="nx">collator</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_1</code>: <em>any</em></li>
-<li><code>input_2</code>: <em>any</em></li>
-<li><code>collator</code>: <em>collator</em> — Options for locale-dependent comparison.</li>
+<li><code>input_1</code>: <code>any</code></li>
+<li><code>input_2</code>: <code>any</code></li>
+<li><code>collator</code>: <code>collator</code>- Options for locale-dependent comparison.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-66-1"><a id="__codelineno-66-1" name="__codelineno-66-1" href="#__codelineno-66-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;==&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;$type&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;Polygon&quot;</span><span class="p">]</span>
@@ -3861,9 +4324,9 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-67-1"><a id="__codelineno-67-1" name="__codelineno-67-1" href="#__codelineno-67-1"></a><span class="p">[</span><span class="s2">&quot;!=&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">input_2</span><span class="p">,</span><span class="w"> </span><span class="nx">collator</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_1</code>: <em>any</em></li>
-<li><code>input_2</code>: <em>any</em></li>
-<li><code>collator</code>: <em>collator</em> — Options for locale-dependent comparison.</li>
+<li><code>input_1</code>: <code>any</code></li>
+<li><code>input_2</code>: <code>any</code></li>
+<li><code>collator</code>: <code>collator</code>- Options for locale-dependent comparison.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-68-1"><a id="__codelineno-68-1" name="__codelineno-68-1" href="#__codelineno-68-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;!=&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;cluster&quot;</span><span class="p">,</span><span class="w"> </span><span class="kc">true</span><span class="p">]</span>
@@ -3899,9 +4362,9 @@
 </span><span id="__span-69-2"><a id="__codelineno-69-2" name="__codelineno-69-2" href="#__codelineno-69-2"></a><span class="p">[</span><span class="s2">&quot;&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">number_1</span><span class="p">,</span><span class="w"> </span><span class="nx">number_2</span><span class="p">,</span><span class="w"> </span><span class="nx">collator</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>string_i</code>: <em>string</em></li>
-<li><code>number_i</code>: <em>number</em></li>
-<li><code>collator</code>: <em>collator</em> — Options for locale-dependent comparison.</li>
+<li><code>string_i</code>: <code>string</code></li>
+<li><code>number_i</code>: <code>number</code></li>
+<li><code>collator</code>: <code>collator</code>- Options for locale-dependent comparison.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-70-1"><a id="__codelineno-70-1" name="__codelineno-70-1" href="#__codelineno-70-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&gt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span>
@@ -3940,9 +4403,9 @@
 </span><span id="__span-71-2"><a id="__codelineno-71-2" name="__codelineno-71-2" href="#__codelineno-71-2"></a><span class="p">[</span><span class="s2">&quot;&lt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">number_1</span><span class="p">,</span><span class="w"> </span><span class="nx">number_2</span><span class="p">,</span><span class="w"> </span><span class="nx">collator</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>string_i</code>: <em>string</em></li>
-<li><code>number_i</code>: <em>number</em></li>
-<li><code>collator</code>: <em>collator</em> — Options for locale-dependent comparison.</li>
+<li><code>string_i</code>: <code>string</code></li>
+<li><code>number_i</code>: <code>number</code></li>
+<li><code>collator</code>: <code>collator</code>- Options for locale-dependent comparison.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-72-1"><a id="__codelineno-72-1" name="__codelineno-72-1" href="#__codelineno-72-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&lt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span>
@@ -3981,9 +4444,9 @@
 </span><span id="__span-73-2"><a id="__codelineno-73-2" name="__codelineno-73-2" href="#__codelineno-73-2"></a><span class="p">[</span><span class="s2">&quot;&gt;=&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">number_1</span><span class="p">,</span><span class="w"> </span><span class="nx">number_2</span><span class="p">,</span><span class="w"> </span><span class="nx">collator</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>string_i</code>: <em>string</em></li>
-<li><code>number_i</code>: <em>number</em></li>
-<li><code>collator</code>: <em>collator</em> — Options for locale-dependent comparison.</li>
+<li><code>string_i</code>: <code>string</code></li>
+<li><code>number_i</code>: <code>number</code></li>
+<li><code>collator</code>: <code>collator</code>- Options for locale-dependent comparison.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-74-1"><a id="__codelineno-74-1" name="__codelineno-74-1" href="#__codelineno-74-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&gt;=&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">6</span><span class="p">]</span>
@@ -4019,9 +4482,9 @@
 </span><span id="__span-75-2"><a id="__codelineno-75-2" name="__codelineno-75-2" href="#__codelineno-75-2"></a><span class="p">[</span><span class="s2">&quot;&lt;=&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">number_1</span><span class="p">,</span><span class="w"> </span><span class="nx">number_2</span><span class="p">,</span><span class="w"> </span><span class="nx">collator</span><span class="o">?</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>string_i</code>: <em>string</em></li>
-<li><code>number_i</code>: <em>number</em></li>
-<li><code>collator</code>: <em>collator</em> — Options for locale-dependent comparison.</li>
+<li><code>string_i</code>: <code>string</code></li>
+<li><code>number_i</code>: <code>number</code></li>
+<li><code>collator</code>: <code>collator</code>- Options for locale-dependent comparison.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-76-1"><a id="__codelineno-76-1" name="__codelineno-76-1" href="#__codelineno-76-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&lt;=&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">6</span><span class="p">]</span>
@@ -4059,7 +4522,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-77-1"><a id="__codelineno-77-1" name="__codelineno-77-1" href="#__codelineno-77-1"></a><span class="p">[</span><span class="s2">&quot;all&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">input_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_i</code>: <em>boolean</em></li>
+<li><code>input_i</code>: <code>boolean</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-78-1"><a id="__codelineno-78-1" name="__codelineno-78-1" href="#__codelineno-78-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;all&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&gt;=&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">4</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&lt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">5</span><span class="p">]]</span>
@@ -4088,7 +4551,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-79-1"><a id="__codelineno-79-1" name="__codelineno-79-1" href="#__codelineno-79-1"></a><span class="p">[</span><span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">input_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_i</code>: <em>boolean</em></li>
+<li><code>input_i</code>: <code>boolean</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-80-1"><a id="__codelineno-80-1" name="__codelineno-80-1" href="#__codelineno-80-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;any&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&gt;=&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">4</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;&lt;&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mag&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">5</span><span class="p">]]</span>
@@ -4120,7 +4583,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-81-1"><a id="__codelineno-81-1" name="__codelineno-81-1" href="#__codelineno-81-1"></a><span class="p">[</span><span class="s2">&quot;!&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>boolean</em></li>
+<li><code>input</code>: <code>boolean</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-82-1"><a id="__codelineno-82-1" name="__codelineno-82-1" href="#__codelineno-82-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;!&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;has&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;point_count&quot;</span><span class="p">]]</span>
@@ -4157,7 +4620,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-83-1"><a id="__codelineno-83-1" name="__codelineno-83-1" href="#__codelineno-83-1"></a><span class="p">[</span><span class="s2">&quot;within&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">geojson</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>geojson</code>: <em>GeoJSON object</em></li>
+<li><code>geojson</code>: <code>GeoJSON object</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-84-1"><a id="__codelineno-84-1" name="__codelineno-84-1" href="#__codelineno-84-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -4196,13 +4659,13 @@
 <li><a href="https://maplibre.org/maplibre-gl-js/docs/examples/create-and-style-clusters/">Create and style clusters</a></li>
 </ul>
 <p>Syntax:
-<div class="language-js highlight"><pre><span></span><code><span id="__span-85-1"><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a><span class="p">[</span><span class="s2">&quot;step&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">output_0</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_1_input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_1_output</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stop_n_input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_n_output</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-85-1"><a id="__codelineno-85-1" name="__codelineno-85-1" href="#__codelineno-85-1"></a><span class="p">[</span><span class="s2">&quot;step&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">output_0</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_output_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stop_input_n</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_output_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em> — Any numeric expression.</li>
-<li><code>output_0</code>: <em>any</em> — The result when the <code>input</code> is less than the first stop.</li>
-<li><code>stop_i_input</code>: <em>number literal</em> — The value of the i-th stop against which the <code>input</code> is compared.</li>
-<li><code>stop_i_output</code>: <em>any</em> — The result when the i-th stop is the last stop less than the <code>input</code>.</li>
+<li><code>input</code>: <code>number</code>- Any numeric expression.</li>
+<li><code>output_0</code>: <code>any</code>- The result when the <code>input</code> is less than the first stop.</li>
+<li><code>stop_input_i</code>: <code>number literal</code>- The value of the i-th stop against which the <code>input</code> is compared.</li>
+<li><code>stop_output_i</code>: <code>any</code>- The result when the i-th stop is the last stop less than the <code>input</code>.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-86-1"><a id="__codelineno-86-1" name="__codelineno-86-1" href="#__codelineno-86-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;step&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;point_count&quot;</span><span class="p">],</span><span class="w"> </span><span class="mi">20</span><span class="p">,</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w"> </span><span class="mi">30</span><span class="p">,</span><span class="w"> </span><span class="mi">750</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">]</span>
@@ -4227,17 +4690,7 @@
 </table>
 <h3 id="interpolate">interpolate<a class="headerlink" href="#interpolate" title="Permanent link">&para;</a></h3>
 <p>Produces continuous, smooth results by interpolating between pairs of input and output values ("stops"). The <code>input</code> may be any numeric expression (e.g., <code>["get", "population"]</code>). Stop inputs must be numeric literals in strictly ascending order. The output type must be <code>number</code>, <code>array&lt;number&gt;</code>, <code>color</code>, <code>array&lt;color&gt;</code>, or <code>projection</code>.</p>
-<p>Interpolation types:</p>
 <ul>
-<li>
-<p><code>["linear"]</code>, or an expression returning one of those types: Interpolates linearly between the pair of stops just less than and just greater than the input.</p>
-</li>
-<li>
-<p><code>["exponential", base]</code>: Interpolates exponentially between the stops just less than and just greater than the input. <code>base</code> controls the rate at which the output increases: higher values make the output increase more towards the high end of the range. With values close to 1 the output increases linearly.</p>
-</li>
-<li>
-<p><code>["cubic-bezier", x1, y1, x2, y2]</code>: Interpolates using the cubic bezier curve defined by the given control points.</p>
-</li>
 <li>
 <p><a href="https://maplibre.org/maplibre-gl-js/docs/examples/animate-camera-around-point/">Animate map camera around a point</a></p>
 </li>
@@ -4252,13 +4705,25 @@
 </li>
 </ul>
 <p>Syntax:
-<div class="language-js highlight"><pre><span></span><code><span id="__span-87-1"><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a><span class="p">[</span><span class="s2">&quot;interpolate&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">interpolation_type</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_1_input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_1_output</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stop_n_input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_n_output</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">number</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">color</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">projection</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-87-1"><a id="__codelineno-87-1" name="__codelineno-87-1" href="#__codelineno-87-1"></a><span class="p">[</span><span class="s2">&quot;interpolate&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">interpolation_type</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_output_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stop_input_n</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_output_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">number</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">color</span><span class="o">&gt;</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">projection</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>interpolation_type</code>: <em>["linear"] | ["exponential", base] | ["cubic-bezier", x1, y1, x2, y2]</em> — The interpolation type.</li>
-<li><code>input</code>: <em>number</em> — Any numeric expression.</li>
-<li><code>stop_i_input</code>: <em>number literal</em> — The value of the i-th stop against which the <code>input</code> is compared.</li>
-<li><code>stop_i_output</code>: <em>number | array&lt;number&gt; | color | array&lt;color&gt; | projection</em> — The output value corresponding to the i-th stop.</li>
+<li><code>interpolation_type</code>: <code>interpolation</code>- The interpolation type.<br />
+    An interpolation defines how to transition between items. The first element of an interpolation array is a string naming the interpolation operator, e.g. <code>"linear"</code> or <code>"exponential"</code>. Elements that follow (if any) are the <em>arguments</em> to the interpolation.<br />
+    Possible values are:<br />
+        - <code>["linear"]</code>: Interpolates linearly between the pair of stops just less than and just greater than the input<br />
+        - <code>["exponential", base]</code>: Interpolates exponentially between the stops just less than and just greater than the input.<br />
+            Parameters are:<br />
+<code>base</code>: rate at which the output increases in <code>f(x) = x^r</code>. Values higher than 1 increase, close to one behaves linearly, and below one decrease.<br />
+        - <code>["cubic-bezier", x1, y1, x2, y2]</code>: Interpolates using the cubic bézier curve defined by the given control points.<br />
+            Parameters are:<br />
+<code>x1</code>: X-coordinate of the first control point. Must be between zero and one for a valid monotonic easing curve. Controls how quickly the curve speeds up at the beginning.<br />
+<code>y1</code>: Y-coordinate of the first control point. Typically between zero and one, but may exceed this range for overshoot effects. Influences the starting slope of the curve.<br />
+<code>x2</code>: X-coordinate of the second control point. Must be between zero and one for a valid monotonic easing curve. Controls when the curve begins to decelerate toward the end.<br />
+<code>y2</code>: Y-coordinate of the second control point. Typically between zero and one, but may exceed this range for overshoot effects. Influences the ending slope of the curve.</li>
+<li><code>input</code>: <code>number</code>- Any numeric expression.</li>
+<li><code>stop_input_i</code>: <code>number literal</code>- The value of the i-th stop against which the <code>input</code> is compared.</li>
+<li><code>stop_output_i</code>: <code>number | array&lt;number&gt; | color | array&lt;color&gt; | projection</code>- The output value corresponding to the i-th stop.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-88-1"><a id="__codelineno-88-1" name="__codelineno-88-1" href="#__codelineno-88-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -4292,13 +4757,25 @@
 <h3 id="interpolate-hcl">interpolate-hcl<a class="headerlink" href="#interpolate-hcl" title="Permanent link">&para;</a></h3>
 <p>Produces continuous, smooth results by interpolating between pairs of input and output values ("stops"). Works like <code>interpolate</code>, but the output type must be <code>color</code> or <code>array&lt;color&gt;</code>, and the interpolation is performed in the Hue-Chroma-Luminance color space.</p>
 <p>Syntax:
-<div class="language-js highlight"><pre><span></span><code><span id="__span-89-1"><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a><span class="p">[</span><span class="s2">&quot;interpolate-hcl&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">interpolation_type</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_1_input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_1_output</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stop_n_input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_n_output</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">color</span><span class="o">&gt;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-89-1"><a id="__codelineno-89-1" name="__codelineno-89-1" href="#__codelineno-89-1"></a><span class="p">[</span><span class="s2">&quot;interpolate-hcl&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">interpolation_type</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_output_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stop_input_n</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_output_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">color</span><span class="o">&gt;</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>interpolation_type</code>: <em>["linear"] | ["exponential", base] | ["cubic-bezier", x1, y1, x2, y2]</em></li>
-<li><code>input</code>: <em>number</em></li>
-<li><code>stop_i_input</code>: <em>number literal</em></li>
-<li><code>stop_i_output</code>: <em>color | array&lt;color&gt;</em></li>
+<li><code>interpolation_type</code>: <code>interpolation</code>- The interpolation type.<br />
+    An interpolation defines how to transition between items. The first element of an interpolation array is a string naming the interpolation operator, e.g. <code>"linear"</code> or <code>"exponential"</code>. Elements that follow (if any) are the <em>arguments</em> to the interpolation.<br />
+    Possible values are:<br />
+        - <code>["linear"]</code>: Interpolates linearly between the pair of stops just less than and just greater than the input<br />
+        - <code>["exponential", base]</code>: Interpolates exponentially between the stops just less than and just greater than the input.<br />
+            Parameters are:<br />
+<code>base</code>: rate at which the output increases in <code>f(x) = x^r</code>. Values higher than 1 increase, close to one behaves linearly, and below one decrease.<br />
+        - <code>["cubic-bezier", x1, y1, x2, y2]</code>: Interpolates using the cubic bézier curve defined by the given control points.<br />
+            Parameters are:<br />
+<code>x1</code>: X-coordinate of the first control point. Must be between zero and one for a valid monotonic easing curve. Controls how quickly the curve speeds up at the beginning.<br />
+<code>y1</code>: Y-coordinate of the first control point. Typically between zero and one, but may exceed this range for overshoot effects. Influences the starting slope of the curve.<br />
+<code>x2</code>: X-coordinate of the second control point. Must be between zero and one for a valid monotonic easing curve. Controls when the curve begins to decelerate toward the end.<br />
+<code>y2</code>: Y-coordinate of the second control point. Typically between zero and one, but may exceed this range for overshoot effects. Influences the ending slope of the curve.</li>
+<li><code>input</code>: <code>number</code></li>
+<li><code>stop_input_i</code>: <code>number literal</code></li>
+<li><code>stop_output_i</code>: <code>color | array&lt;color&gt;</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-90-1"><a id="__codelineno-90-1" name="__codelineno-90-1" href="#__codelineno-90-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -4332,13 +4809,25 @@
 <h3 id="interpolate-lab">interpolate-lab<a class="headerlink" href="#interpolate-lab" title="Permanent link">&para;</a></h3>
 <p>Produces continuous, smooth results by interpolating between pairs of input and output values ("stops"). Works like <code>interpolate</code>, but the output type must be <code>color</code> or <code>array&lt;color&gt;</code>, and the interpolation is performed in the CIELAB color space.</p>
 <p>Syntax:
-<div class="language-js highlight"><pre><span></span><code><span id="__span-91-1"><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a><span class="p">[</span><span class="s2">&quot;interpolate-lab&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">interpolation_type</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_1_input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_1_output</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stop_n_input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_n_output</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">color</span><span class="o">&gt;</span>
+<div class="language-js highlight"><pre><span></span><code><span id="__span-91-1"><a id="__codelineno-91-1" name="__codelineno-91-1" href="#__codelineno-91-1"></a><span class="p">[</span><span class="s2">&quot;interpolate-lab&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">interpolation_type</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_output_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">stop_input_n</span><span class="p">,</span><span class="w"> </span><span class="nx">stop_output_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">color</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="nx">array</span><span class="o">&lt;</span><span class="nx">color</span><span class="o">&gt;</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>interpolation_type</code>: <em>["linear"] | ["exponential", base] | ["cubic-bezier", x1, y1, x2, y2]</em></li>
-<li><code>input</code>: <em>number</em></li>
-<li><code>stop_i_input</code>: <em>number literal</em></li>
-<li><code>stop_i_output</code>: <em>color | array&lt;color&gt;</em></li>
+<li><code>interpolation_type</code>: <code>interpolation</code>- The interpolation type.<br />
+    An interpolation defines how to transition between items. The first element of an interpolation array is a string naming the interpolation operator, e.g. <code>"linear"</code> or <code>"exponential"</code>. Elements that follow (if any) are the <em>arguments</em> to the interpolation.<br />
+    Possible values are:<br />
+        - <code>["linear"]</code>: Interpolates linearly between the pair of stops just less than and just greater than the input<br />
+        - <code>["exponential", base]</code>: Interpolates exponentially between the stops just less than and just greater than the input.<br />
+            Parameters are:<br />
+<code>base</code>: rate at which the output increases in <code>f(x) = x^r</code>. Values higher than 1 increase, close to one behaves linearly, and below one decrease.<br />
+        - <code>["cubic-bezier", x1, y1, x2, y2]</code>: Interpolates using the cubic bézier curve defined by the given control points.<br />
+            Parameters are:<br />
+<code>x1</code>: X-coordinate of the first control point. Must be between zero and one for a valid monotonic easing curve. Controls how quickly the curve speeds up at the beginning.<br />
+<code>y1</code>: Y-coordinate of the first control point. Typically between zero and one, but may exceed this range for overshoot effects. Influences the starting slope of the curve.<br />
+<code>x2</code>: X-coordinate of the second control point. Must be between zero and one for a valid monotonic easing curve. Controls when the curve begins to decelerate toward the end.<br />
+<code>y2</code>: Y-coordinate of the second control point. Typically between zero and one, but may exceed this range for overshoot effects. Influences the ending slope of the curve.</li>
+<li><code>input</code>: <code>number</code></li>
+<li><code>stop_input_i</code>: <code>number literal</code></li>
+<li><code>stop_output_i</code>: <code>color | array&lt;color&gt;</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-92-1"><a id="__codelineno-92-1" name="__codelineno-92-1" href="#__codelineno-92-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -4454,7 +4943,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-99-1"><a id="__codelineno-99-1" name="__codelineno-99-1" href="#__codelineno-99-1"></a><span class="p">[</span><span class="s2">&quot;+&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">input_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_i</code>: <em>number</em></li>
+<li><code>input_i</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-100-1"><a id="__codelineno-100-1" name="__codelineno-100-1" href="#__codelineno-100-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;+&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span>
@@ -4483,7 +4972,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-101-1"><a id="__codelineno-101-1" name="__codelineno-101-1" href="#__codelineno-101-1"></a><span class="p">[</span><span class="s2">&quot;*&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">input_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_i</code>: <em>number</em></li>
+<li><code>input_i</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-102-1"><a id="__codelineno-102-1" name="__codelineno-102-1" href="#__codelineno-102-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;*&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span>
@@ -4513,9 +5002,9 @@
 </span><span id="__span-103-2"><a id="__codelineno-103-2" name="__codelineno-103-2" href="#__codelineno-103-2"></a><span class="p">[</span><span class="s2">&quot;-&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">single_input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_1</code>: <em>number</em> — The number from which to subtract <code>input_2</code>.</li>
-<li><code>input_2</code>: <em>number</em> — The number to subtract from <code>input_1</code>.</li>
-<li><code>single_input</code>: <em>number</em> — The number to subtract from 0.</li>
+<li><code>input_1</code>: <code>number</code>- The number from which to subtract <code>input_2</code>.</li>
+<li><code>input_2</code>: <code>number</code>- The number to subtract from <code>input_1</code>.</li>
+<li><code>single_input</code>: <code>number</code>- The number to subtract from 0.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-104-1"><a id="__codelineno-104-1" name="__codelineno-104-1" href="#__codelineno-104-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;-&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">]</span>
@@ -4547,8 +5036,8 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-105-1"><a id="__codelineno-105-1" name="__codelineno-105-1" href="#__codelineno-105-1"></a><span class="p">[</span><span class="s2">&quot;/&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">input_2</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_1</code>: <em>number</em> — The dividend.</li>
-<li><code>input_2</code>: <em>number</em> — The divisor.</li>
+<li><code>input_1</code>: <code>number</code>- The dividend.</li>
+<li><code>input_2</code>: <code>number</code>- The divisor.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-106-1"><a id="__codelineno-106-1" name="__codelineno-106-1" href="#__codelineno-106-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;population&quot;</span><span class="p">],</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;sq-km&quot;</span><span class="p">]]</span>
@@ -4577,8 +5066,8 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-107-1"><a id="__codelineno-107-1" name="__codelineno-107-1" href="#__codelineno-107-1"></a><span class="p">[</span><span class="s2">&quot;%&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">input_2</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_1</code>: <em>number</em> — The dividend.</li>
-<li><code>input_2</code>: <em>number</em> — The divisor.</li>
+<li><code>input_1</code>: <code>number</code>- The dividend.</li>
+<li><code>input_2</code>: <code>number</code>- The divisor.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-108-1"><a id="__codelineno-108-1" name="__codelineno-108-1" href="#__codelineno-108-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;%&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span>
@@ -4607,8 +5096,8 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-109-1"><a id="__codelineno-109-1" name="__codelineno-109-1" href="#__codelineno-109-1"></a><span class="p">[</span><span class="s2">&quot;^&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="nx">input_2</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_1</code>: <em>number</em> — The base.</li>
-<li><code>input_2</code>: <em>number</em> — The exponent.</li>
+<li><code>input_1</code>: <code>number</code>- The base.</li>
+<li><code>input_2</code>: <code>number</code>- The exponent.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-110-1"><a id="__codelineno-110-1" name="__codelineno-110-1" href="#__codelineno-110-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;^&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">]</span>
@@ -4637,7 +5126,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-111-1"><a id="__codelineno-111-1" name="__codelineno-111-1" href="#__codelineno-111-1"></a><span class="p">[</span><span class="s2">&quot;sqrt&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em> — The radicand.</li>
+<li><code>input</code>: <code>number</code>- The radicand.</li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-112-1"><a id="__codelineno-112-1" name="__codelineno-112-1" href="#__codelineno-112-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;sqrt&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">]</span>
@@ -4666,7 +5155,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-113-1"><a id="__codelineno-113-1" name="__codelineno-113-1" href="#__codelineno-113-1"></a><span class="p">[</span><span class="s2">&quot;log10&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-114-1"><a id="__codelineno-114-1" name="__codelineno-114-1" href="#__codelineno-114-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;log10&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">]</span>
@@ -4695,7 +5184,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-115-1"><a id="__codelineno-115-1" name="__codelineno-115-1" href="#__codelineno-115-1"></a><span class="p">[</span><span class="s2">&quot;ln&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-116-1"><a id="__codelineno-116-1" name="__codelineno-116-1" href="#__codelineno-116-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ln&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">]</span>
@@ -4724,7 +5213,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-117-1"><a id="__codelineno-117-1" name="__codelineno-117-1" href="#__codelineno-117-1"></a><span class="p">[</span><span class="s2">&quot;log2&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-118-1"><a id="__codelineno-118-1" name="__codelineno-118-1" href="#__codelineno-118-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;log2&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="p">]</span>
@@ -4753,7 +5242,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-119-1"><a id="__codelineno-119-1" name="__codelineno-119-1" href="#__codelineno-119-1"></a><span class="p">[</span><span class="s2">&quot;sin&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-120-1"><a id="__codelineno-120-1" name="__codelineno-120-1" href="#__codelineno-120-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;sin&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
@@ -4782,7 +5271,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-121-1"><a id="__codelineno-121-1" name="__codelineno-121-1" href="#__codelineno-121-1"></a><span class="p">[</span><span class="s2">&quot;cos&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-122-1"><a id="__codelineno-122-1" name="__codelineno-122-1" href="#__codelineno-122-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;cos&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
@@ -4811,7 +5300,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-123-1"><a id="__codelineno-123-1" name="__codelineno-123-1" href="#__codelineno-123-1"></a><span class="p">[</span><span class="s2">&quot;tan&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-124-1"><a id="__codelineno-124-1" name="__codelineno-124-1" href="#__codelineno-124-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;tan&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
@@ -4840,7 +5329,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-125-1"><a id="__codelineno-125-1" name="__codelineno-125-1" href="#__codelineno-125-1"></a><span class="p">[</span><span class="s2">&quot;asin&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-126-1"><a id="__codelineno-126-1" name="__codelineno-126-1" href="#__codelineno-126-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;asin&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
@@ -4869,7 +5358,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-127-1"><a id="__codelineno-127-1" name="__codelineno-127-1" href="#__codelineno-127-1"></a><span class="p">[</span><span class="s2">&quot;acos&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-128-1"><a id="__codelineno-128-1" name="__codelineno-128-1" href="#__codelineno-128-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;acos&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
@@ -4898,7 +5387,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-129-1"><a id="__codelineno-129-1" name="__codelineno-129-1" href="#__codelineno-129-1"></a><span class="p">[</span><span class="s2">&quot;atan&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-130-1"><a id="__codelineno-130-1" name="__codelineno-130-1" href="#__codelineno-130-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;atan&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
@@ -4927,7 +5416,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-131-1"><a id="__codelineno-131-1" name="__codelineno-131-1" href="#__codelineno-131-1"></a><span class="p">[</span><span class="s2">&quot;min&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">input_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_i</code>: <em>number</em></li>
+<li><code>input_i</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-132-1"><a id="__codelineno-132-1" name="__codelineno-132-1" href="#__codelineno-132-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;min&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span>
@@ -4956,7 +5445,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-133-1"><a id="__codelineno-133-1" name="__codelineno-133-1" href="#__codelineno-133-1"></a><span class="p">[</span><span class="s2">&quot;max&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">input_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_i</code>: <em>number</em></li>
+<li><code>input_i</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-134-1"><a id="__codelineno-134-1" name="__codelineno-134-1" href="#__codelineno-134-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;max&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span>
@@ -4985,7 +5474,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-135-1"><a id="__codelineno-135-1" name="__codelineno-135-1" href="#__codelineno-135-1"></a><span class="p">[</span><span class="s2">&quot;round&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-136-1"><a id="__codelineno-136-1" name="__codelineno-136-1" href="#__codelineno-136-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;round&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5</span><span class="p">]</span>
@@ -5014,7 +5503,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-137-1"><a id="__codelineno-137-1" name="__codelineno-137-1" href="#__codelineno-137-1"></a><span class="p">[</span><span class="s2">&quot;abs&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-138-1"><a id="__codelineno-138-1" name="__codelineno-138-1" href="#__codelineno-138-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;abs&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">-1.5</span><span class="p">]</span>
@@ -5043,7 +5532,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-139-1"><a id="__codelineno-139-1" name="__codelineno-139-1" href="#__codelineno-139-1"></a><span class="p">[</span><span class="s2">&quot;ceil&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-140-1"><a id="__codelineno-140-1" name="__codelineno-140-1" href="#__codelineno-140-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;ceil&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5</span><span class="p">]</span>
@@ -5072,7 +5561,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-141-1"><a id="__codelineno-141-1" name="__codelineno-141-1" href="#__codelineno-141-1"></a><span class="p">[</span><span class="s2">&quot;floor&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>number</em></li>
+<li><code>input</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-142-1"><a id="__codelineno-142-1" name="__codelineno-142-1" href="#__codelineno-142-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;floor&quot;</span><span class="p">,</span><span class="w"> </span><span class="mf">1.5</span><span class="p">]</span>
@@ -5101,7 +5590,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-143-1"><a id="__codelineno-143-1" name="__codelineno-143-1" href="#__codelineno-143-1"></a><span class="p">[</span><span class="s2">&quot;distance&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">geojson</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">number</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>geojson</code>: <em>GeoJSON object</em></li>
+<li><code>geojson</code>: <code>GeoJSON object</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-144-1"><a id="__codelineno-144-1" name="__codelineno-144-1" href="#__codelineno-144-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;distance&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Point&quot;</span><span class="p">,</span><span class="w"> </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]}]</span>
@@ -5131,7 +5620,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-145-1"><a id="__codelineno-145-1" name="__codelineno-145-1" href="#__codelineno-145-1"></a><span class="p">[</span><span class="s2">&quot;to-rgba&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">color</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">array</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>color</code>: <em>color</em></li>
+<li><code>color</code>: <code>color</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-146-1"><a id="__codelineno-146-1" name="__codelineno-146-1" href="#__codelineno-146-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;to-rgba&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#ff0000&quot;</span><span class="p">]</span>
@@ -5160,9 +5649,9 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-147-1"><a id="__codelineno-147-1" name="__codelineno-147-1" href="#__codelineno-147-1"></a><span class="p">[</span><span class="s2">&quot;rgb&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">red</span><span class="p">,</span><span class="w"> </span><span class="nx">green</span><span class="p">,</span><span class="w"> </span><span class="nx">blue</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">color</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>red</code>: <em>number</em></li>
-<li><code>green</code>: <em>number</em></li>
-<li><code>blue</code>: <em>number</em></li>
+<li><code>red</code>: <code>number</code></li>
+<li><code>green</code>: <code>number</code></li>
+<li><code>blue</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-148-1"><a id="__codelineno-148-1" name="__codelineno-148-1" href="#__codelineno-148-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;rgb&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">]</span>
@@ -5186,15 +5675,15 @@
 </tbody>
 </table>
 <h3 id="rgba">rgba<a class="headerlink" href="#rgba" title="Permanent link">&para;</a></h3>
-<p>Creates a color value from red, green, blue components, which must range between 0 and 255, and an alpha component which must range between 0 and 1. If any component is out of range, the expression is an error.</p>
+<p>Creates a color value from red, green, blue components, which must range between 0 and 255, and an alpha component which must range between zero and one. If any component is out of range, the expression is an error.</p>
 <p>Syntax:
 <div class="language-js highlight"><pre><span></span><code><span id="__span-149-1"><a id="__codelineno-149-1" name="__codelineno-149-1" href="#__codelineno-149-1"></a><span class="p">[</span><span class="s2">&quot;rgba&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">red</span><span class="p">,</span><span class="w"> </span><span class="nx">green</span><span class="p">,</span><span class="w"> </span><span class="nx">blue</span><span class="p">,</span><span class="w"> </span><span class="nx">alpha</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">color</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>red</code>: <em>number</em></li>
-<li><code>green</code>: <em>number</em></li>
-<li><code>blue</code>: <em>number</em></li>
-<li><code>alpha</code>: <em>number</em></li>
+<li><code>red</code>: <code>number</code></li>
+<li><code>green</code>: <code>number</code></li>
+<li><code>blue</code>: <code>number</code></li>
+<li><code>alpha</code>: <code>number</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-150-1"><a id="__codelineno-150-1" name="__codelineno-150-1" href="#__codelineno-150-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;rgba&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span>
@@ -5253,7 +5742,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-153-1"><a id="__codelineno-153-1" name="__codelineno-153-1" href="#__codelineno-153-1"></a><span class="p">[</span><span class="s2">&quot;feature-state&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">property_name</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">any</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>property_name</code>: <em>string</em></li>
+<li><code>property_name</code>: <code>string</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-154-1"><a id="__codelineno-154-1" name="__codelineno-154-1" href="#__codelineno-154-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;feature-state&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;hover&quot;</span><span class="p">]</span>
@@ -5476,7 +5965,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-169-1"><a id="__codelineno-169-1" name="__codelineno-169-1" href="#__codelineno-169-1"></a><span class="p">[</span><span class="s2">&quot;is-supported-script&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="kr">boolean</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>string</em></li>
+<li><code>input</code>: <code>string</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-170-1"><a id="__codelineno-170-1" name="__codelineno-170-1" href="#__codelineno-170-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;is-supported-script&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;दिल्ली&quot;</span><span class="p">]</span>
@@ -5508,7 +5997,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-171-1"><a id="__codelineno-171-1" name="__codelineno-171-1" href="#__codelineno-171-1"></a><span class="p">[</span><span class="s2">&quot;upcase&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>string</em></li>
+<li><code>input</code>: <code>string</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-172-1"><a id="__codelineno-172-1" name="__codelineno-172-1" href="#__codelineno-172-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;upcase&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">]]</span>
@@ -5540,7 +6029,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-173-1"><a id="__codelineno-173-1" name="__codelineno-173-1" href="#__codelineno-173-1"></a><span class="p">[</span><span class="s2">&quot;downcase&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input</code>: <em>string</em></li>
+<li><code>input</code>: <code>string</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-174-1"><a id="__codelineno-174-1" name="__codelineno-174-1" href="#__codelineno-174-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;downcase&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;name&quot;</span><span class="p">]]</span>
@@ -5583,7 +6072,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-175-1"><a id="__codelineno-175-1" name="__codelineno-175-1" href="#__codelineno-175-1"></a><span class="p">[</span><span class="s2">&quot;concat&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">input_1</span><span class="p">,</span><span class="w"> </span><span class="p">...,</span><span class="w"> </span><span class="nx">input_n</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>input_i</code>: <em>any</em></li>
+<li><code>input_i</code>: <code>any</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-176-1"><a id="__codelineno-176-1" name="__codelineno-176-1" href="#__codelineno-176-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;concat&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;square-rgb-&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;get&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;color&quot;</span><span class="p">]]</span>
@@ -5612,7 +6101,7 @@
 <div class="language-js highlight"><pre><span></span><code><span id="__span-177-1"><a id="__codelineno-177-1" name="__codelineno-177-1" href="#__codelineno-177-1"></a><span class="p">[</span><span class="s2">&quot;resolved-locale&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">collator</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="nx">string</span>
 </span></code></pre></div></p>
 <ul>
-<li><code>collator</code>: <em>collator</em></li>
+<li><code>collator</code>: <code>collator</code></li>
 </ul>
 <p>Example:
 <div class="language-json highlight"><pre><span></span><code><span id="__span-178-1"><a id="__codelineno-178-1" name="__codelineno-178-1" href="#__codelineno-178-1"></a><span class="nt">&quot;some-property&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
@@ -5652,8 +6141,7 @@
 
 
 
-  
-  
+
 
 
 
@@ -5670,7 +6158,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
   Back to top
 </button>
         
@@ -5684,8 +6172,8 @@
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
     </a>
   
 </div>
@@ -5703,7 +6191,7 @@
       
     
     <a href="https://mastodon.social/@maplibre" target="_blank" rel="noopener me" title="mastodon.social" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
     </a>
   
     
@@ -5714,7 +6202,7 @@
       
     
     <a href="https://x.com/maplibre" target="_blank" rel="noopener" title="x.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
     </a>
   
     
@@ -5725,7 +6213,7 @@
       
     
     <a href="https://www.linkedin.com/company/maplibre" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
     
@@ -5736,7 +6224,7 @@
       
     
     <a href="https://osmus.slack.com/archives/C01G3D28DAB" target="_blank" rel="noopener" title="osmus.slack.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M94.1 315.1c0 25.9-21.2 47.1-47.1 47.1S0 341 0 315.1 21.2 268 47.1 268h47.1v47.1zm23.7 0c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1v117.8c0 25.9-21.2 47.1-47.1 47.1s-47.1-21.2-47.1-47.1zm47.1-189c-25.9 0-47.1-21.2-47.1-47.1s21.2-47 47.1-47S212 53.2 212 79.1v47.1h-47.1zm0 23.7c25.9 0 47.1 21.2 47.1 47.1S190.8 244 164.9 244H47.1C21.2 244 0 222.8 0 196.9s21.2-47.1 47.1-47.1zm189 47.1c0-25.9 21.2-47.1 47.1-47.1s47 21.2 47 47.1-21.2 47.1-47.1 47.1h-47.1v-47.1zm-23.7 0c0 25.9-21.2 47.1-47.1 47.1S236 222.8 236 196.9V79.1c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1zm-47.1 189c25.9 0 47.1 21.2 47.1 47.1s-21.2 47-47.1 47-47.1-21.2-47.1-47.1v-47.1h47.1zm0-23.7c-25.9 0-47.1-21.2-47.1-47.1s21.2-47.1 47.1-47.1h117.8c25.9 0 47.1 21.2 47.1 47.1s-21.2 47.1-47.1 47.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M94.1 315.1c0 25.9-21.2 47.1-47.1 47.1S0 341 0 315.1 21.2 268 47.1 268h47.1v47.1zm23.7 0c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1v117.8c0 25.9-21.2 47.1-47.1 47.1s-47.1-21.2-47.1-47.1zm47.1-189c-25.9 0-47.1-21.2-47.1-47.1s21.2-47 47.1-47S212 53.2 212 79.1v47.1h-47.1zm0 23.7c25.9 0 47.1 21.2 47.1 47.1S190.8 244 164.9 244H47.1C21.2 244 0 222.8 0 196.9s21.2-47.1 47.1-47.1zm189 47.1c0-25.9 21.2-47.1 47.1-47.1s47 21.2 47 47.1-21.2 47.1-47.1 47.1h-47.1v-47.1zm-23.7 0c0 25.9-21.2 47.1-47.1 47.1S236 222.8 236 196.9V79.1c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1zm-47.1 189c25.9 0 47.1 21.2 47.1 47.1s-21.2 47-47.1 47-47.1-21.2-47.1-47.1v-47.1h47.1zm0-23.7c-25.9 0-47.1-21.2-47.1-47.1s21.2-47.1 47.1-47.1h117.8c25.9 0 47.1 21.2 47.1 47.1s-21.2 47.1-47.1 47.1z"/></svg>
     </a>
   
     
@@ -5747,7 +6235,7 @@
       
     
     <a href="https://github.com/maplibre" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -5764,10 +6252,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "toc.follow", "search.suggest", "navigation.instant", "navigation.sections", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.copy","toc.follow","search.suggest","navigation.instant","navigation.sections","navigation.top"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.5fcf0de6.min.js"></script>
       
     
   </body>

@@ -19,8 +19,11 @@
         <link rel="next" href="../light/">
       
       
+        
+      
+      
       <link rel="icon" href="https://maplibre.org/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+      <meta name="generator" content="zensical-0.0.23">
     
     
       
@@ -28,10 +31,15 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.1e989742.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.dfe2e883.min.css">
       
       
 
@@ -45,44 +53,17 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
       
     
     
       <link rel="stylesheet" href="../assets/extra.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
 
-    
-    
-      
-        <meta  property="og:type"  content="website" >
-      
-        <meta  property="og:title"  content="Layers - MapLibre Style Spec" >
-      
-        <meta  property="og:description"  content="Documentation for the MapLibre Style Specification" >
-      
-        <meta  property="og:image"  content="https://www.maplibre.org/maplibre-style-spec/assets/images/social/layers.png" >
-      
-        <meta  property="og:image:type"  content="image/png" >
-      
-        <meta  property="og:image:width"  content="1200" >
-      
-        <meta  property="og:image:height"  content="630" >
-      
-        <meta  property="og:url"  content="https://www.maplibre.org/maplibre-style-spec/layers/" >
-      
-        <meta  name="twitter:card"  content="summary_large_image" >
-      
-        <meta  name="twitter:title"  content="Layers - MapLibre Style Spec" >
-      
-        <meta  name="twitter:description"  content="Documentation for the MapLibre Style Specification" >
-      
-        <meta  name="twitter:image"  content="https://www.maplibre.org/maplibre-style-spec/assets/images/social/layers.png" >
-      
     
     
   </head>
@@ -120,14 +101,14 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="MapLibre Style Spec" class="md-header__button md-logo" aria-label="MapLibre Style Spec" data-md-component="logo">
+    <a href="./.." title="MapLibre Style Spec" class="md-header__button md-logo" aria-label="MapLibre Style Spec" data-md-component="logo">
       
   <img src="../assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -191,57 +172,28 @@
       
         <label class="md-header__button md-icon" for="__search">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
         </label>
-        <div class="md-search" data-md-component="search" role="dialog">
-  <label class="md-search__overlay" for="__search"></label>
-  <div class="md-search__inner" role="search">
-    <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
-      <label class="md-search__icon md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
-      </label>
-      <nav class="md-search__options" aria-label="Search">
-        
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
-        </button>
-      </nav>
-      
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
-    </form>
-    <div class="md-search__output">
-      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
-          <div class="md-search-result__meta">
-            Initializing search
-          </div>
-          <ol class="md-search-result__list" role="presentation"></ol>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
 </div>
       
     
-    
-      <div class="md-header__source">
+    <div class="md-header__source">
+      
         <a href="https://github.com/maplibre/maplibre-style-spec" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
   </div>
 </a>
-      </div>
-    
+      
+    </div>
   </nav>
   
 </header>
@@ -267,7 +219,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="MapLibre Style Spec" class="md-nav__button md-logo" aria-label="MapLibre Style Spec" data-md-component="logo">
+    <a href="./.." title="MapLibre Style Spec" class="md-nav__button md-logo" aria-label="MapLibre Style Spec" data-md-component="logo">
       
   <img src="../assets/logo.svg" alt="logo">
 
@@ -279,7 +231,7 @@
       <a href="https://github.com/maplibre/maplibre-style-spec" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     GitHub
@@ -296,14 +248,19 @@
   
   
     <li class="md-nav__item">
-      <a href=".." class="md-nav__link">
+      <a href="./.." class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
+    
+  
     Introduction
+  
+
     
   </span>
+  
   
 
       </a>
@@ -323,9 +280,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Deprecations
+  
+
     
   </span>
+  
   
 
       </a>
@@ -345,9 +307,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Expressions
+  
+
     
   </span>
+  
   
 
       </a>
@@ -367,9 +334,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Font-faces
+  
+
     
   </span>
+  
   
 
       </a>
@@ -389,9 +361,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Glyphs
+  
+
     
   </span>
+  
   
 
       </a>
@@ -420,29 +397,40 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Layers
+  
+
     
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <a href="./" class="md-nav__link md-nav__link--active">
+      <a href="././" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
+    
+  
     Layers
+  
+
     
   </span>
+  
   
 
       </a>
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -451,14 +439,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#layer-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Layer Properties
+      
+        Layer Properties
+      
     </span>
   </a>
   
@@ -468,7 +458,9 @@
           <li class="md-nav__item">
   <a href="#id" class="md-nav__link">
     <span class="md-ellipsis">
-      id
+      
+        id
+      
     </span>
   </a>
   
@@ -477,7 +469,9 @@
           <li class="md-nav__item">
   <a href="#type" class="md-nav__link">
     <span class="md-ellipsis">
-      type
+      
+        type
+      
     </span>
   </a>
   
@@ -486,7 +480,9 @@
           <li class="md-nav__item">
   <a href="#metadata" class="md-nav__link">
     <span class="md-ellipsis">
-      metadata
+      
+        metadata
+      
     </span>
   </a>
   
@@ -495,7 +491,9 @@
           <li class="md-nav__item">
   <a href="#source" class="md-nav__link">
     <span class="md-ellipsis">
-      source
+      
+        source
+      
     </span>
   </a>
   
@@ -504,7 +502,9 @@
           <li class="md-nav__item">
   <a href="#source-layer" class="md-nav__link">
     <span class="md-ellipsis">
-      source-layer
+      
+        source-layer
+      
     </span>
   </a>
   
@@ -513,7 +513,9 @@
           <li class="md-nav__item">
   <a href="#minzoom" class="md-nav__link">
     <span class="md-ellipsis">
-      minzoom
+      
+        minzoom
+      
     </span>
   </a>
   
@@ -522,7 +524,9 @@
           <li class="md-nav__item">
   <a href="#maxzoom" class="md-nav__link">
     <span class="md-ellipsis">
-      maxzoom
+      
+        maxzoom
+      
     </span>
   </a>
   
@@ -531,7 +535,9 @@
           <li class="md-nav__item">
   <a href="#filter" class="md-nav__link">
     <span class="md-ellipsis">
-      filter
+      
+        filter
+      
     </span>
   </a>
   
@@ -540,7 +546,9 @@
           <li class="md-nav__item">
   <a href="#layout" class="md-nav__link">
     <span class="md-ellipsis">
-      layout
+      
+        layout
+      
     </span>
   </a>
   
@@ -549,7 +557,9 @@
           <li class="md-nav__item">
   <a href="#paint" class="md-nav__link">
     <span class="md-ellipsis">
-      paint
+      
+        paint
+      
     </span>
   </a>
   
@@ -563,7 +573,9 @@
         <li class="md-nav__item">
   <a href="#background" class="md-nav__link">
     <span class="md-ellipsis">
-      Background
+      
+        Background
+      
     </span>
   </a>
   
@@ -573,7 +585,9 @@
           <li class="md-nav__item">
   <a href="#visibility" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -582,7 +596,9 @@
           <li class="md-nav__item">
   <a href="#background-color" class="md-nav__link">
     <span class="md-ellipsis">
-      background-color
+      
+        background-color
+      
     </span>
   </a>
   
@@ -591,7 +607,9 @@
           <li class="md-nav__item">
   <a href="#background-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      background-pattern
+      
+        background-pattern
+      
     </span>
   </a>
   
@@ -600,7 +618,9 @@
           <li class="md-nav__item">
   <a href="#background-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      background-opacity
+      
+        background-opacity
+      
     </span>
   </a>
   
@@ -614,7 +634,9 @@
         <li class="md-nav__item">
   <a href="#fill" class="md-nav__link">
     <span class="md-ellipsis">
-      Fill
+      
+        Fill
+      
     </span>
   </a>
   
@@ -624,7 +646,9 @@
           <li class="md-nav__item">
   <a href="#fill-sort-key" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-sort-key
+      
+        fill-sort-key
+      
     </span>
   </a>
   
@@ -633,7 +657,9 @@
           <li class="md-nav__item">
   <a href="#visibility_1" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -642,7 +668,9 @@
           <li class="md-nav__item">
   <a href="#fill-antialias" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-antialias
+      
+        fill-antialias
+      
     </span>
   </a>
   
@@ -651,7 +679,9 @@
           <li class="md-nav__item">
   <a href="#fill-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-opacity
+      
+        fill-opacity
+      
     </span>
   </a>
   
@@ -660,7 +690,9 @@
           <li class="md-nav__item">
   <a href="#fill-color" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-color
+      
+        fill-color
+      
     </span>
   </a>
   
@@ -669,7 +701,9 @@
           <li class="md-nav__item">
   <a href="#fill-outline-color" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-outline-color
+      
+        fill-outline-color
+      
     </span>
   </a>
   
@@ -678,7 +712,9 @@
           <li class="md-nav__item">
   <a href="#fill-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-translate
+      
+        fill-translate
+      
     </span>
   </a>
   
@@ -687,7 +723,9 @@
           <li class="md-nav__item">
   <a href="#fill-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-translate-anchor
+      
+        fill-translate-anchor
+      
     </span>
   </a>
   
@@ -696,7 +734,9 @@
           <li class="md-nav__item">
   <a href="#fill-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-pattern
+      
+        fill-pattern
+      
     </span>
   </a>
   
@@ -710,7 +750,9 @@
         <li class="md-nav__item">
   <a href="#circle" class="md-nav__link">
     <span class="md-ellipsis">
-      Circle
+      
+        Circle
+      
     </span>
   </a>
   
@@ -720,7 +762,9 @@
           <li class="md-nav__item">
   <a href="#circle-sort-key" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-sort-key
+      
+        circle-sort-key
+      
     </span>
   </a>
   
@@ -729,7 +773,9 @@
           <li class="md-nav__item">
   <a href="#visibility_2" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -738,7 +784,9 @@
           <li class="md-nav__item">
   <a href="#circle-radius" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-radius
+      
+        circle-radius
+      
     </span>
   </a>
   
@@ -747,7 +795,9 @@
           <li class="md-nav__item">
   <a href="#circle-color" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-color
+      
+        circle-color
+      
     </span>
   </a>
   
@@ -756,7 +806,9 @@
           <li class="md-nav__item">
   <a href="#circle-blur" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-blur
+      
+        circle-blur
+      
     </span>
   </a>
   
@@ -765,7 +817,9 @@
           <li class="md-nav__item">
   <a href="#circle-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-opacity
+      
+        circle-opacity
+      
     </span>
   </a>
   
@@ -774,7 +828,9 @@
           <li class="md-nav__item">
   <a href="#circle-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-translate
+      
+        circle-translate
+      
     </span>
   </a>
   
@@ -783,7 +839,9 @@
           <li class="md-nav__item">
   <a href="#circle-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-translate-anchor
+      
+        circle-translate-anchor
+      
     </span>
   </a>
   
@@ -792,7 +850,9 @@
           <li class="md-nav__item">
   <a href="#circle-pitch-scale" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-pitch-scale
+      
+        circle-pitch-scale
+      
     </span>
   </a>
   
@@ -801,7 +861,9 @@
           <li class="md-nav__item">
   <a href="#circle-pitch-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-pitch-alignment
+      
+        circle-pitch-alignment
+      
     </span>
   </a>
   
@@ -810,7 +872,9 @@
           <li class="md-nav__item">
   <a href="#circle-stroke-width" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-stroke-width
+      
+        circle-stroke-width
+      
     </span>
   </a>
   
@@ -819,7 +883,9 @@
           <li class="md-nav__item">
   <a href="#circle-stroke-color" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-stroke-color
+      
+        circle-stroke-color
+      
     </span>
   </a>
   
@@ -828,7 +894,9 @@
           <li class="md-nav__item">
   <a href="#circle-stroke-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-stroke-opacity
+      
+        circle-stroke-opacity
+      
     </span>
   </a>
   
@@ -842,7 +910,9 @@
         <li class="md-nav__item">
   <a href="#heatmap" class="md-nav__link">
     <span class="md-ellipsis">
-      Heatmap
+      
+        Heatmap
+      
     </span>
   </a>
   
@@ -852,7 +922,9 @@
           <li class="md-nav__item">
   <a href="#visibility_3" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -861,7 +933,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-radius" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-radius
+      
+        heatmap-radius
+      
     </span>
   </a>
   
@@ -870,7 +944,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-weight" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-weight
+      
+        heatmap-weight
+      
     </span>
   </a>
   
@@ -879,7 +955,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-intensity" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-intensity
+      
+        heatmap-intensity
+      
     </span>
   </a>
   
@@ -888,7 +966,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-color" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-color
+      
+        heatmap-color
+      
     </span>
   </a>
   
@@ -897,7 +977,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-opacity
+      
+        heatmap-opacity
+      
     </span>
   </a>
   
@@ -911,7 +993,9 @@
         <li class="md-nav__item">
   <a href="#fill-extrusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Fill-extrusion
+      
+        Fill-extrusion
+      
     </span>
   </a>
   
@@ -921,7 +1005,9 @@
           <li class="md-nav__item">
   <a href="#visibility_4" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -930,7 +1016,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-opacity
+      
+        fill-extrusion-opacity
+      
     </span>
   </a>
   
@@ -939,7 +1027,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-color" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-color
+      
+        fill-extrusion-color
+      
     </span>
   </a>
   
@@ -948,7 +1038,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-translate
+      
+        fill-extrusion-translate
+      
     </span>
   </a>
   
@@ -957,7 +1049,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-translate-anchor
+      
+        fill-extrusion-translate-anchor
+      
     </span>
   </a>
   
@@ -966,7 +1060,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-pattern
+      
+        fill-extrusion-pattern
+      
     </span>
   </a>
   
@@ -975,7 +1071,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-height" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-height
+      
+        fill-extrusion-height
+      
     </span>
   </a>
   
@@ -984,7 +1082,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-base" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-base
+      
+        fill-extrusion-base
+      
     </span>
   </a>
   
@@ -993,7 +1093,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-vertical-gradient" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-vertical-gradient
+      
+        fill-extrusion-vertical-gradient
+      
     </span>
   </a>
   
@@ -1007,7 +1109,9 @@
         <li class="md-nav__item">
   <a href="#line" class="md-nav__link">
     <span class="md-ellipsis">
-      Line
+      
+        Line
+      
     </span>
   </a>
   
@@ -1017,7 +1121,9 @@
           <li class="md-nav__item">
   <a href="#line-cap" class="md-nav__link">
     <span class="md-ellipsis">
-      line-cap
+      
+        line-cap
+      
     </span>
   </a>
   
@@ -1026,7 +1132,9 @@
           <li class="md-nav__item">
   <a href="#line-join" class="md-nav__link">
     <span class="md-ellipsis">
-      line-join
+      
+        line-join
+      
     </span>
   </a>
   
@@ -1035,7 +1143,9 @@
           <li class="md-nav__item">
   <a href="#line-miter-limit" class="md-nav__link">
     <span class="md-ellipsis">
-      line-miter-limit
+      
+        line-miter-limit
+      
     </span>
   </a>
   
@@ -1044,7 +1154,9 @@
           <li class="md-nav__item">
   <a href="#line-round-limit" class="md-nav__link">
     <span class="md-ellipsis">
-      line-round-limit
+      
+        line-round-limit
+      
     </span>
   </a>
   
@@ -1053,7 +1165,9 @@
           <li class="md-nav__item">
   <a href="#line-sort-key" class="md-nav__link">
     <span class="md-ellipsis">
-      line-sort-key
+      
+        line-sort-key
+      
     </span>
   </a>
   
@@ -1062,7 +1176,9 @@
           <li class="md-nav__item">
   <a href="#visibility_5" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -1071,7 +1187,9 @@
           <li class="md-nav__item">
   <a href="#line-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      line-opacity
+      
+        line-opacity
+      
     </span>
   </a>
   
@@ -1080,7 +1198,9 @@
           <li class="md-nav__item">
   <a href="#line-color" class="md-nav__link">
     <span class="md-ellipsis">
-      line-color
+      
+        line-color
+      
     </span>
   </a>
   
@@ -1089,7 +1209,9 @@
           <li class="md-nav__item">
   <a href="#line-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      line-translate
+      
+        line-translate
+      
     </span>
   </a>
   
@@ -1098,7 +1220,9 @@
           <li class="md-nav__item">
   <a href="#line-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      line-translate-anchor
+      
+        line-translate-anchor
+      
     </span>
   </a>
   
@@ -1107,7 +1231,9 @@
           <li class="md-nav__item">
   <a href="#line-width" class="md-nav__link">
     <span class="md-ellipsis">
-      line-width
+      
+        line-width
+      
     </span>
   </a>
   
@@ -1116,7 +1242,9 @@
           <li class="md-nav__item">
   <a href="#line-gap-width" class="md-nav__link">
     <span class="md-ellipsis">
-      line-gap-width
+      
+        line-gap-width
+      
     </span>
   </a>
   
@@ -1125,7 +1253,9 @@
           <li class="md-nav__item">
   <a href="#line-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      line-offset
+      
+        line-offset
+      
     </span>
   </a>
   
@@ -1134,7 +1264,9 @@
           <li class="md-nav__item">
   <a href="#line-blur" class="md-nav__link">
     <span class="md-ellipsis">
-      line-blur
+      
+        line-blur
+      
     </span>
   </a>
   
@@ -1143,7 +1275,9 @@
           <li class="md-nav__item">
   <a href="#line-dasharray" class="md-nav__link">
     <span class="md-ellipsis">
-      line-dasharray
+      
+        line-dasharray
+      
     </span>
   </a>
   
@@ -1152,7 +1286,9 @@
           <li class="md-nav__item">
   <a href="#line-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      line-pattern
+      
+        line-pattern
+      
     </span>
   </a>
   
@@ -1161,7 +1297,9 @@
           <li class="md-nav__item">
   <a href="#line-gradient" class="md-nav__link">
     <span class="md-ellipsis">
-      line-gradient
+      
+        line-gradient
+      
     </span>
   </a>
   
@@ -1175,7 +1313,9 @@
         <li class="md-nav__item">
   <a href="#symbol" class="md-nav__link">
     <span class="md-ellipsis">
-      Symbol
+      
+        Symbol
+      
     </span>
   </a>
   
@@ -1185,7 +1325,9 @@
           <li class="md-nav__item">
   <a href="#symbol-placement" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-placement
+      
+        symbol-placement
+      
     </span>
   </a>
   
@@ -1194,7 +1336,9 @@
           <li class="md-nav__item">
   <a href="#symbol-spacing" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-spacing
+      
+        symbol-spacing
+      
     </span>
   </a>
   
@@ -1203,7 +1347,9 @@
           <li class="md-nav__item">
   <a href="#symbol-avoid-edges" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-avoid-edges
+      
+        symbol-avoid-edges
+      
     </span>
   </a>
   
@@ -1212,7 +1358,9 @@
           <li class="md-nav__item">
   <a href="#symbol-sort-key" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-sort-key
+      
+        symbol-sort-key
+      
     </span>
   </a>
   
@@ -1221,7 +1369,9 @@
           <li class="md-nav__item">
   <a href="#symbol-z-order" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-z-order
+      
+        symbol-z-order
+      
     </span>
   </a>
   
@@ -1230,7 +1380,9 @@
           <li class="md-nav__item">
   <a href="#icon-allow-overlap" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-allow-overlap
+      
+        icon-allow-overlap
+      
     </span>
   </a>
   
@@ -1239,7 +1391,9 @@
           <li class="md-nav__item">
   <a href="#icon-overlap" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-overlap
+      
+        icon-overlap
+      
     </span>
   </a>
   
@@ -1248,7 +1402,9 @@
           <li class="md-nav__item">
   <a href="#icon-ignore-placement" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-ignore-placement
+      
+        icon-ignore-placement
+      
     </span>
   </a>
   
@@ -1257,7 +1413,9 @@
           <li class="md-nav__item">
   <a href="#icon-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-optional
+      
+        icon-optional
+      
     </span>
   </a>
   
@@ -1266,7 +1424,9 @@
           <li class="md-nav__item">
   <a href="#icon-rotation-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-rotation-alignment
+      
+        icon-rotation-alignment
+      
     </span>
   </a>
   
@@ -1275,7 +1435,9 @@
           <li class="md-nav__item">
   <a href="#icon-size" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-size
+      
+        icon-size
+      
     </span>
   </a>
   
@@ -1284,7 +1446,9 @@
           <li class="md-nav__item">
   <a href="#icon-text-fit" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-text-fit
+      
+        icon-text-fit
+      
     </span>
   </a>
   
@@ -1293,7 +1457,9 @@
           <li class="md-nav__item">
   <a href="#icon-text-fit-padding" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-text-fit-padding
+      
+        icon-text-fit-padding
+      
     </span>
   </a>
   
@@ -1302,7 +1468,9 @@
           <li class="md-nav__item">
   <a href="#icon-image" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-image
+      
+        icon-image
+      
     </span>
   </a>
   
@@ -1311,7 +1479,9 @@
           <li class="md-nav__item">
   <a href="#icon-rotate" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-rotate
+      
+        icon-rotate
+      
     </span>
   </a>
   
@@ -1320,7 +1490,9 @@
           <li class="md-nav__item">
   <a href="#icon-padding" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-padding
+      
+        icon-padding
+      
     </span>
   </a>
   
@@ -1329,7 +1501,9 @@
           <li class="md-nav__item">
   <a href="#icon-keep-upright" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-keep-upright
+      
+        icon-keep-upright
+      
     </span>
   </a>
   
@@ -1338,7 +1512,9 @@
           <li class="md-nav__item">
   <a href="#icon-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-offset
+      
+        icon-offset
+      
     </span>
   </a>
   
@@ -1347,7 +1523,9 @@
           <li class="md-nav__item">
   <a href="#icon-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-anchor
+      
+        icon-anchor
+      
     </span>
   </a>
   
@@ -1356,7 +1534,9 @@
           <li class="md-nav__item">
   <a href="#icon-pitch-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-pitch-alignment
+      
+        icon-pitch-alignment
+      
     </span>
   </a>
   
@@ -1365,7 +1545,9 @@
           <li class="md-nav__item">
   <a href="#text-pitch-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      text-pitch-alignment
+      
+        text-pitch-alignment
+      
     </span>
   </a>
   
@@ -1374,7 +1556,9 @@
           <li class="md-nav__item">
   <a href="#text-rotation-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      text-rotation-alignment
+      
+        text-rotation-alignment
+      
     </span>
   </a>
   
@@ -1383,7 +1567,9 @@
           <li class="md-nav__item">
   <a href="#text-field" class="md-nav__link">
     <span class="md-ellipsis">
-      text-field
+      
+        text-field
+      
     </span>
   </a>
   
@@ -1392,7 +1578,9 @@
           <li class="md-nav__item">
   <a href="#text-font" class="md-nav__link">
     <span class="md-ellipsis">
-      text-font
+      
+        text-font
+      
     </span>
   </a>
   
@@ -1401,7 +1589,9 @@
           <li class="md-nav__item">
   <a href="#text-size" class="md-nav__link">
     <span class="md-ellipsis">
-      text-size
+      
+        text-size
+      
     </span>
   </a>
   
@@ -1410,7 +1600,9 @@
           <li class="md-nav__item">
   <a href="#text-max-width" class="md-nav__link">
     <span class="md-ellipsis">
-      text-max-width
+      
+        text-max-width
+      
     </span>
   </a>
   
@@ -1419,7 +1611,9 @@
           <li class="md-nav__item">
   <a href="#text-line-height" class="md-nav__link">
     <span class="md-ellipsis">
-      text-line-height
+      
+        text-line-height
+      
     </span>
   </a>
   
@@ -1428,7 +1622,9 @@
           <li class="md-nav__item">
   <a href="#text-letter-spacing" class="md-nav__link">
     <span class="md-ellipsis">
-      text-letter-spacing
+      
+        text-letter-spacing
+      
     </span>
   </a>
   
@@ -1437,7 +1633,9 @@
           <li class="md-nav__item">
   <a href="#text-justify" class="md-nav__link">
     <span class="md-ellipsis">
-      text-justify
+      
+        text-justify
+      
     </span>
   </a>
   
@@ -1446,7 +1644,9 @@
           <li class="md-nav__item">
   <a href="#text-radial-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      text-radial-offset
+      
+        text-radial-offset
+      
     </span>
   </a>
   
@@ -1455,7 +1655,9 @@
           <li class="md-nav__item">
   <a href="#text-variable-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      text-variable-anchor
+      
+        text-variable-anchor
+      
     </span>
   </a>
   
@@ -1464,7 +1666,9 @@
           <li class="md-nav__item">
   <a href="#text-variable-anchor-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      text-variable-anchor-offset
+      
+        text-variable-anchor-offset
+      
     </span>
   </a>
   
@@ -1473,7 +1677,9 @@
           <li class="md-nav__item">
   <a href="#text-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      text-anchor
+      
+        text-anchor
+      
     </span>
   </a>
   
@@ -1482,7 +1688,9 @@
           <li class="md-nav__item">
   <a href="#text-max-angle" class="md-nav__link">
     <span class="md-ellipsis">
-      text-max-angle
+      
+        text-max-angle
+      
     </span>
   </a>
   
@@ -1491,7 +1699,9 @@
           <li class="md-nav__item">
   <a href="#text-writing-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      text-writing-mode
+      
+        text-writing-mode
+      
     </span>
   </a>
   
@@ -1500,7 +1710,9 @@
           <li class="md-nav__item">
   <a href="#text-rotate" class="md-nav__link">
     <span class="md-ellipsis">
-      text-rotate
+      
+        text-rotate
+      
     </span>
   </a>
   
@@ -1509,7 +1721,9 @@
           <li class="md-nav__item">
   <a href="#text-padding" class="md-nav__link">
     <span class="md-ellipsis">
-      text-padding
+      
+        text-padding
+      
     </span>
   </a>
   
@@ -1518,7 +1732,9 @@
           <li class="md-nav__item">
   <a href="#text-keep-upright" class="md-nav__link">
     <span class="md-ellipsis">
-      text-keep-upright
+      
+        text-keep-upright
+      
     </span>
   </a>
   
@@ -1527,7 +1743,9 @@
           <li class="md-nav__item">
   <a href="#text-transform" class="md-nav__link">
     <span class="md-ellipsis">
-      text-transform
+      
+        text-transform
+      
     </span>
   </a>
   
@@ -1536,7 +1754,9 @@
           <li class="md-nav__item">
   <a href="#text-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      text-offset
+      
+        text-offset
+      
     </span>
   </a>
   
@@ -1545,7 +1765,9 @@
           <li class="md-nav__item">
   <a href="#text-allow-overlap" class="md-nav__link">
     <span class="md-ellipsis">
-      text-allow-overlap
+      
+        text-allow-overlap
+      
     </span>
   </a>
   
@@ -1554,7 +1776,9 @@
           <li class="md-nav__item">
   <a href="#text-overlap" class="md-nav__link">
     <span class="md-ellipsis">
-      text-overlap
+      
+        text-overlap
+      
     </span>
   </a>
   
@@ -1563,7 +1787,9 @@
           <li class="md-nav__item">
   <a href="#text-ignore-placement" class="md-nav__link">
     <span class="md-ellipsis">
-      text-ignore-placement
+      
+        text-ignore-placement
+      
     </span>
   </a>
   
@@ -1572,7 +1798,9 @@
           <li class="md-nav__item">
   <a href="#text-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      text-optional
+      
+        text-optional
+      
     </span>
   </a>
   
@@ -1581,7 +1809,9 @@
           <li class="md-nav__item">
   <a href="#visibility_6" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -1590,7 +1820,9 @@
           <li class="md-nav__item">
   <a href="#icon-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-opacity
+      
+        icon-opacity
+      
     </span>
   </a>
   
@@ -1599,7 +1831,9 @@
           <li class="md-nav__item">
   <a href="#icon-color" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-color
+      
+        icon-color
+      
     </span>
   </a>
   
@@ -1608,7 +1842,9 @@
           <li class="md-nav__item">
   <a href="#icon-halo-color" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-halo-color
+      
+        icon-halo-color
+      
     </span>
   </a>
   
@@ -1617,7 +1853,9 @@
           <li class="md-nav__item">
   <a href="#icon-halo-width" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-halo-width
+      
+        icon-halo-width
+      
     </span>
   </a>
   
@@ -1626,7 +1864,9 @@
           <li class="md-nav__item">
   <a href="#icon-halo-blur" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-halo-blur
+      
+        icon-halo-blur
+      
     </span>
   </a>
   
@@ -1635,7 +1875,9 @@
           <li class="md-nav__item">
   <a href="#icon-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-translate
+      
+        icon-translate
+      
     </span>
   </a>
   
@@ -1644,7 +1886,9 @@
           <li class="md-nav__item">
   <a href="#icon-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-translate-anchor
+      
+        icon-translate-anchor
+      
     </span>
   </a>
   
@@ -1653,7 +1897,9 @@
           <li class="md-nav__item">
   <a href="#text-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      text-opacity
+      
+        text-opacity
+      
     </span>
   </a>
   
@@ -1662,7 +1908,9 @@
           <li class="md-nav__item">
   <a href="#text-color" class="md-nav__link">
     <span class="md-ellipsis">
-      text-color
+      
+        text-color
+      
     </span>
   </a>
   
@@ -1671,7 +1919,9 @@
           <li class="md-nav__item">
   <a href="#text-halo-color" class="md-nav__link">
     <span class="md-ellipsis">
-      text-halo-color
+      
+        text-halo-color
+      
     </span>
   </a>
   
@@ -1680,7 +1930,9 @@
           <li class="md-nav__item">
   <a href="#text-halo-width" class="md-nav__link">
     <span class="md-ellipsis">
-      text-halo-width
+      
+        text-halo-width
+      
     </span>
   </a>
   
@@ -1689,7 +1941,9 @@
           <li class="md-nav__item">
   <a href="#text-halo-blur" class="md-nav__link">
     <span class="md-ellipsis">
-      text-halo-blur
+      
+        text-halo-blur
+      
     </span>
   </a>
   
@@ -1698,7 +1952,9 @@
           <li class="md-nav__item">
   <a href="#text-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      text-translate
+      
+        text-translate
+      
     </span>
   </a>
   
@@ -1707,7 +1963,9 @@
           <li class="md-nav__item">
   <a href="#text-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      text-translate-anchor
+      
+        text-translate-anchor
+      
     </span>
   </a>
   
@@ -1721,7 +1979,9 @@
         <li class="md-nav__item">
   <a href="#raster" class="md-nav__link">
     <span class="md-ellipsis">
-      Raster
+      
+        Raster
+      
     </span>
   </a>
   
@@ -1731,7 +1991,9 @@
           <li class="md-nav__item">
   <a href="#visibility_7" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -1740,7 +2002,9 @@
           <li class="md-nav__item">
   <a href="#raster-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-opacity
+      
+        raster-opacity
+      
     </span>
   </a>
   
@@ -1749,7 +2013,9 @@
           <li class="md-nav__item">
   <a href="#raster-hue-rotate" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-hue-rotate
+      
+        raster-hue-rotate
+      
     </span>
   </a>
   
@@ -1758,7 +2024,9 @@
           <li class="md-nav__item">
   <a href="#raster-brightness-min" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-brightness-min
+      
+        raster-brightness-min
+      
     </span>
   </a>
   
@@ -1767,7 +2035,9 @@
           <li class="md-nav__item">
   <a href="#raster-brightness-max" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-brightness-max
+      
+        raster-brightness-max
+      
     </span>
   </a>
   
@@ -1776,7 +2046,9 @@
           <li class="md-nav__item">
   <a href="#raster-saturation" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-saturation
+      
+        raster-saturation
+      
     </span>
   </a>
   
@@ -1785,7 +2057,20 @@
           <li class="md-nav__item">
   <a href="#raster-contrast" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-contrast
+      
+        raster-contrast
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        resampling
+      
     </span>
   </a>
   
@@ -1794,7 +2079,9 @@
           <li class="md-nav__item">
   <a href="#raster-resampling" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-resampling
+      
+        raster-resampling
+      
     </span>
   </a>
   
@@ -1803,7 +2090,9 @@
           <li class="md-nav__item">
   <a href="#raster-fade-duration" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-fade-duration
+      
+        raster-fade-duration
+      
     </span>
   </a>
   
@@ -1817,7 +2106,9 @@
         <li class="md-nav__item">
   <a href="#hillshade" class="md-nav__link">
     <span class="md-ellipsis">
-      Hillshade
+      
+        Hillshade
+      
     </span>
   </a>
   
@@ -1827,7 +2118,9 @@
           <li class="md-nav__item">
   <a href="#visibility_8" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -1836,7 +2129,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-illumination-direction" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-illumination-direction
+      
+        hillshade-illumination-direction
+      
     </span>
   </a>
   
@@ -1845,7 +2140,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-illumination-altitude" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-illumination-altitude
+      
+        hillshade-illumination-altitude
+      
     </span>
   </a>
   
@@ -1854,7 +2151,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-illumination-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-illumination-anchor
+      
+        hillshade-illumination-anchor
+      
     </span>
   </a>
   
@@ -1863,7 +2162,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-exaggeration" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-exaggeration
+      
+        hillshade-exaggeration
+      
     </span>
   </a>
   
@@ -1872,7 +2173,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-shadow-color" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-shadow-color
+      
+        hillshade-shadow-color
+      
     </span>
   </a>
   
@@ -1881,7 +2184,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-highlight-color" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-highlight-color
+      
+        hillshade-highlight-color
+      
     </span>
   </a>
   
@@ -1890,7 +2195,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-accent-color" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-accent-color
+      
+        hillshade-accent-color
+      
     </span>
   </a>
   
@@ -1899,7 +2206,20 @@
           <li class="md-nav__item">
   <a href="#hillshade-method" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-method
+      
+        hillshade-method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        resampling
+      
     </span>
   </a>
   
@@ -1913,7 +2233,9 @@
         <li class="md-nav__item">
   <a href="#color-relief" class="md-nav__link">
     <span class="md-ellipsis">
-      Color-relief
+      
+        Color-relief
+      
     </span>
   </a>
   
@@ -1923,7 +2245,9 @@
           <li class="md-nav__item">
   <a href="#visibility_9" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -1932,7 +2256,9 @@
           <li class="md-nav__item">
   <a href="#color-relief-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      color-relief-opacity
+      
+        color-relief-opacity
+      
     </span>
   </a>
   
@@ -1941,7 +2267,20 @@
           <li class="md-nav__item">
   <a href="#color-relief-color" class="md-nav__link">
     <span class="md-ellipsis">
-      color-relief-color
+      
+        color-relief-color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        resampling
+      
     </span>
   </a>
   
@@ -1972,9 +2311,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Light
+  
+
     
   </span>
+  
   
 
       </a>
@@ -1994,9 +2338,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Projection
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2016,9 +2365,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Root
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2038,9 +2392,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sky
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2060,9 +2419,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sources
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2082,9 +2446,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Sprite
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2104,9 +2473,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     State
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2126,9 +2500,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Terrain
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2148,9 +2527,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Transition
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2170,9 +2554,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Types
+  
+
     
   </span>
+  
   
 
       </a>
@@ -2193,7 +2582,8 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
   
   
   
@@ -2202,14 +2592,16 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      On this page
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#layer-properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Layer Properties
+      
+        Layer Properties
+      
     </span>
   </a>
   
@@ -2219,7 +2611,9 @@
           <li class="md-nav__item">
   <a href="#id" class="md-nav__link">
     <span class="md-ellipsis">
-      id
+      
+        id
+      
     </span>
   </a>
   
@@ -2228,7 +2622,9 @@
           <li class="md-nav__item">
   <a href="#type" class="md-nav__link">
     <span class="md-ellipsis">
-      type
+      
+        type
+      
     </span>
   </a>
   
@@ -2237,7 +2633,9 @@
           <li class="md-nav__item">
   <a href="#metadata" class="md-nav__link">
     <span class="md-ellipsis">
-      metadata
+      
+        metadata
+      
     </span>
   </a>
   
@@ -2246,7 +2644,9 @@
           <li class="md-nav__item">
   <a href="#source" class="md-nav__link">
     <span class="md-ellipsis">
-      source
+      
+        source
+      
     </span>
   </a>
   
@@ -2255,7 +2655,9 @@
           <li class="md-nav__item">
   <a href="#source-layer" class="md-nav__link">
     <span class="md-ellipsis">
-      source-layer
+      
+        source-layer
+      
     </span>
   </a>
   
@@ -2264,7 +2666,9 @@
           <li class="md-nav__item">
   <a href="#minzoom" class="md-nav__link">
     <span class="md-ellipsis">
-      minzoom
+      
+        minzoom
+      
     </span>
   </a>
   
@@ -2273,7 +2677,9 @@
           <li class="md-nav__item">
   <a href="#maxzoom" class="md-nav__link">
     <span class="md-ellipsis">
-      maxzoom
+      
+        maxzoom
+      
     </span>
   </a>
   
@@ -2282,7 +2688,9 @@
           <li class="md-nav__item">
   <a href="#filter" class="md-nav__link">
     <span class="md-ellipsis">
-      filter
+      
+        filter
+      
     </span>
   </a>
   
@@ -2291,7 +2699,9 @@
           <li class="md-nav__item">
   <a href="#layout" class="md-nav__link">
     <span class="md-ellipsis">
-      layout
+      
+        layout
+      
     </span>
   </a>
   
@@ -2300,7 +2710,9 @@
           <li class="md-nav__item">
   <a href="#paint" class="md-nav__link">
     <span class="md-ellipsis">
-      paint
+      
+        paint
+      
     </span>
   </a>
   
@@ -2314,7 +2726,9 @@
         <li class="md-nav__item">
   <a href="#background" class="md-nav__link">
     <span class="md-ellipsis">
-      Background
+      
+        Background
+      
     </span>
   </a>
   
@@ -2324,7 +2738,9 @@
           <li class="md-nav__item">
   <a href="#visibility" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -2333,7 +2749,9 @@
           <li class="md-nav__item">
   <a href="#background-color" class="md-nav__link">
     <span class="md-ellipsis">
-      background-color
+      
+        background-color
+      
     </span>
   </a>
   
@@ -2342,7 +2760,9 @@
           <li class="md-nav__item">
   <a href="#background-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      background-pattern
+      
+        background-pattern
+      
     </span>
   </a>
   
@@ -2351,7 +2771,9 @@
           <li class="md-nav__item">
   <a href="#background-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      background-opacity
+      
+        background-opacity
+      
     </span>
   </a>
   
@@ -2365,7 +2787,9 @@
         <li class="md-nav__item">
   <a href="#fill" class="md-nav__link">
     <span class="md-ellipsis">
-      Fill
+      
+        Fill
+      
     </span>
   </a>
   
@@ -2375,7 +2799,9 @@
           <li class="md-nav__item">
   <a href="#fill-sort-key" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-sort-key
+      
+        fill-sort-key
+      
     </span>
   </a>
   
@@ -2384,7 +2810,9 @@
           <li class="md-nav__item">
   <a href="#visibility_1" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -2393,7 +2821,9 @@
           <li class="md-nav__item">
   <a href="#fill-antialias" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-antialias
+      
+        fill-antialias
+      
     </span>
   </a>
   
@@ -2402,7 +2832,9 @@
           <li class="md-nav__item">
   <a href="#fill-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-opacity
+      
+        fill-opacity
+      
     </span>
   </a>
   
@@ -2411,7 +2843,9 @@
           <li class="md-nav__item">
   <a href="#fill-color" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-color
+      
+        fill-color
+      
     </span>
   </a>
   
@@ -2420,7 +2854,9 @@
           <li class="md-nav__item">
   <a href="#fill-outline-color" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-outline-color
+      
+        fill-outline-color
+      
     </span>
   </a>
   
@@ -2429,7 +2865,9 @@
           <li class="md-nav__item">
   <a href="#fill-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-translate
+      
+        fill-translate
+      
     </span>
   </a>
   
@@ -2438,7 +2876,9 @@
           <li class="md-nav__item">
   <a href="#fill-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-translate-anchor
+      
+        fill-translate-anchor
+      
     </span>
   </a>
   
@@ -2447,7 +2887,9 @@
           <li class="md-nav__item">
   <a href="#fill-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-pattern
+      
+        fill-pattern
+      
     </span>
   </a>
   
@@ -2461,7 +2903,9 @@
         <li class="md-nav__item">
   <a href="#circle" class="md-nav__link">
     <span class="md-ellipsis">
-      Circle
+      
+        Circle
+      
     </span>
   </a>
   
@@ -2471,7 +2915,9 @@
           <li class="md-nav__item">
   <a href="#circle-sort-key" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-sort-key
+      
+        circle-sort-key
+      
     </span>
   </a>
   
@@ -2480,7 +2926,9 @@
           <li class="md-nav__item">
   <a href="#visibility_2" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -2489,7 +2937,9 @@
           <li class="md-nav__item">
   <a href="#circle-radius" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-radius
+      
+        circle-radius
+      
     </span>
   </a>
   
@@ -2498,7 +2948,9 @@
           <li class="md-nav__item">
   <a href="#circle-color" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-color
+      
+        circle-color
+      
     </span>
   </a>
   
@@ -2507,7 +2959,9 @@
           <li class="md-nav__item">
   <a href="#circle-blur" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-blur
+      
+        circle-blur
+      
     </span>
   </a>
   
@@ -2516,7 +2970,9 @@
           <li class="md-nav__item">
   <a href="#circle-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-opacity
+      
+        circle-opacity
+      
     </span>
   </a>
   
@@ -2525,7 +2981,9 @@
           <li class="md-nav__item">
   <a href="#circle-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-translate
+      
+        circle-translate
+      
     </span>
   </a>
   
@@ -2534,7 +2992,9 @@
           <li class="md-nav__item">
   <a href="#circle-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-translate-anchor
+      
+        circle-translate-anchor
+      
     </span>
   </a>
   
@@ -2543,7 +3003,9 @@
           <li class="md-nav__item">
   <a href="#circle-pitch-scale" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-pitch-scale
+      
+        circle-pitch-scale
+      
     </span>
   </a>
   
@@ -2552,7 +3014,9 @@
           <li class="md-nav__item">
   <a href="#circle-pitch-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-pitch-alignment
+      
+        circle-pitch-alignment
+      
     </span>
   </a>
   
@@ -2561,7 +3025,9 @@
           <li class="md-nav__item">
   <a href="#circle-stroke-width" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-stroke-width
+      
+        circle-stroke-width
+      
     </span>
   </a>
   
@@ -2570,7 +3036,9 @@
           <li class="md-nav__item">
   <a href="#circle-stroke-color" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-stroke-color
+      
+        circle-stroke-color
+      
     </span>
   </a>
   
@@ -2579,7 +3047,9 @@
           <li class="md-nav__item">
   <a href="#circle-stroke-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      circle-stroke-opacity
+      
+        circle-stroke-opacity
+      
     </span>
   </a>
   
@@ -2593,7 +3063,9 @@
         <li class="md-nav__item">
   <a href="#heatmap" class="md-nav__link">
     <span class="md-ellipsis">
-      Heatmap
+      
+        Heatmap
+      
     </span>
   </a>
   
@@ -2603,7 +3075,9 @@
           <li class="md-nav__item">
   <a href="#visibility_3" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -2612,7 +3086,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-radius" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-radius
+      
+        heatmap-radius
+      
     </span>
   </a>
   
@@ -2621,7 +3097,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-weight" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-weight
+      
+        heatmap-weight
+      
     </span>
   </a>
   
@@ -2630,7 +3108,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-intensity" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-intensity
+      
+        heatmap-intensity
+      
     </span>
   </a>
   
@@ -2639,7 +3119,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-color" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-color
+      
+        heatmap-color
+      
     </span>
   </a>
   
@@ -2648,7 +3130,9 @@
           <li class="md-nav__item">
   <a href="#heatmap-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      heatmap-opacity
+      
+        heatmap-opacity
+      
     </span>
   </a>
   
@@ -2662,7 +3146,9 @@
         <li class="md-nav__item">
   <a href="#fill-extrusion" class="md-nav__link">
     <span class="md-ellipsis">
-      Fill-extrusion
+      
+        Fill-extrusion
+      
     </span>
   </a>
   
@@ -2672,7 +3158,9 @@
           <li class="md-nav__item">
   <a href="#visibility_4" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -2681,7 +3169,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-opacity
+      
+        fill-extrusion-opacity
+      
     </span>
   </a>
   
@@ -2690,7 +3180,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-color" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-color
+      
+        fill-extrusion-color
+      
     </span>
   </a>
   
@@ -2699,7 +3191,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-translate
+      
+        fill-extrusion-translate
+      
     </span>
   </a>
   
@@ -2708,7 +3202,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-translate-anchor
+      
+        fill-extrusion-translate-anchor
+      
     </span>
   </a>
   
@@ -2717,7 +3213,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-pattern
+      
+        fill-extrusion-pattern
+      
     </span>
   </a>
   
@@ -2726,7 +3224,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-height" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-height
+      
+        fill-extrusion-height
+      
     </span>
   </a>
   
@@ -2735,7 +3235,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-base" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-base
+      
+        fill-extrusion-base
+      
     </span>
   </a>
   
@@ -2744,7 +3246,9 @@
           <li class="md-nav__item">
   <a href="#fill-extrusion-vertical-gradient" class="md-nav__link">
     <span class="md-ellipsis">
-      fill-extrusion-vertical-gradient
+      
+        fill-extrusion-vertical-gradient
+      
     </span>
   </a>
   
@@ -2758,7 +3262,9 @@
         <li class="md-nav__item">
   <a href="#line" class="md-nav__link">
     <span class="md-ellipsis">
-      Line
+      
+        Line
+      
     </span>
   </a>
   
@@ -2768,7 +3274,9 @@
           <li class="md-nav__item">
   <a href="#line-cap" class="md-nav__link">
     <span class="md-ellipsis">
-      line-cap
+      
+        line-cap
+      
     </span>
   </a>
   
@@ -2777,7 +3285,9 @@
           <li class="md-nav__item">
   <a href="#line-join" class="md-nav__link">
     <span class="md-ellipsis">
-      line-join
+      
+        line-join
+      
     </span>
   </a>
   
@@ -2786,7 +3296,9 @@
           <li class="md-nav__item">
   <a href="#line-miter-limit" class="md-nav__link">
     <span class="md-ellipsis">
-      line-miter-limit
+      
+        line-miter-limit
+      
     </span>
   </a>
   
@@ -2795,7 +3307,9 @@
           <li class="md-nav__item">
   <a href="#line-round-limit" class="md-nav__link">
     <span class="md-ellipsis">
-      line-round-limit
+      
+        line-round-limit
+      
     </span>
   </a>
   
@@ -2804,7 +3318,9 @@
           <li class="md-nav__item">
   <a href="#line-sort-key" class="md-nav__link">
     <span class="md-ellipsis">
-      line-sort-key
+      
+        line-sort-key
+      
     </span>
   </a>
   
@@ -2813,7 +3329,9 @@
           <li class="md-nav__item">
   <a href="#visibility_5" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -2822,7 +3340,9 @@
           <li class="md-nav__item">
   <a href="#line-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      line-opacity
+      
+        line-opacity
+      
     </span>
   </a>
   
@@ -2831,7 +3351,9 @@
           <li class="md-nav__item">
   <a href="#line-color" class="md-nav__link">
     <span class="md-ellipsis">
-      line-color
+      
+        line-color
+      
     </span>
   </a>
   
@@ -2840,7 +3362,9 @@
           <li class="md-nav__item">
   <a href="#line-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      line-translate
+      
+        line-translate
+      
     </span>
   </a>
   
@@ -2849,7 +3373,9 @@
           <li class="md-nav__item">
   <a href="#line-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      line-translate-anchor
+      
+        line-translate-anchor
+      
     </span>
   </a>
   
@@ -2858,7 +3384,9 @@
           <li class="md-nav__item">
   <a href="#line-width" class="md-nav__link">
     <span class="md-ellipsis">
-      line-width
+      
+        line-width
+      
     </span>
   </a>
   
@@ -2867,7 +3395,9 @@
           <li class="md-nav__item">
   <a href="#line-gap-width" class="md-nav__link">
     <span class="md-ellipsis">
-      line-gap-width
+      
+        line-gap-width
+      
     </span>
   </a>
   
@@ -2876,7 +3406,9 @@
           <li class="md-nav__item">
   <a href="#line-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      line-offset
+      
+        line-offset
+      
     </span>
   </a>
   
@@ -2885,7 +3417,9 @@
           <li class="md-nav__item">
   <a href="#line-blur" class="md-nav__link">
     <span class="md-ellipsis">
-      line-blur
+      
+        line-blur
+      
     </span>
   </a>
   
@@ -2894,7 +3428,9 @@
           <li class="md-nav__item">
   <a href="#line-dasharray" class="md-nav__link">
     <span class="md-ellipsis">
-      line-dasharray
+      
+        line-dasharray
+      
     </span>
   </a>
   
@@ -2903,7 +3439,9 @@
           <li class="md-nav__item">
   <a href="#line-pattern" class="md-nav__link">
     <span class="md-ellipsis">
-      line-pattern
+      
+        line-pattern
+      
     </span>
   </a>
   
@@ -2912,7 +3450,9 @@
           <li class="md-nav__item">
   <a href="#line-gradient" class="md-nav__link">
     <span class="md-ellipsis">
-      line-gradient
+      
+        line-gradient
+      
     </span>
   </a>
   
@@ -2926,7 +3466,9 @@
         <li class="md-nav__item">
   <a href="#symbol" class="md-nav__link">
     <span class="md-ellipsis">
-      Symbol
+      
+        Symbol
+      
     </span>
   </a>
   
@@ -2936,7 +3478,9 @@
           <li class="md-nav__item">
   <a href="#symbol-placement" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-placement
+      
+        symbol-placement
+      
     </span>
   </a>
   
@@ -2945,7 +3489,9 @@
           <li class="md-nav__item">
   <a href="#symbol-spacing" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-spacing
+      
+        symbol-spacing
+      
     </span>
   </a>
   
@@ -2954,7 +3500,9 @@
           <li class="md-nav__item">
   <a href="#symbol-avoid-edges" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-avoid-edges
+      
+        symbol-avoid-edges
+      
     </span>
   </a>
   
@@ -2963,7 +3511,9 @@
           <li class="md-nav__item">
   <a href="#symbol-sort-key" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-sort-key
+      
+        symbol-sort-key
+      
     </span>
   </a>
   
@@ -2972,7 +3522,9 @@
           <li class="md-nav__item">
   <a href="#symbol-z-order" class="md-nav__link">
     <span class="md-ellipsis">
-      symbol-z-order
+      
+        symbol-z-order
+      
     </span>
   </a>
   
@@ -2981,7 +3533,9 @@
           <li class="md-nav__item">
   <a href="#icon-allow-overlap" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-allow-overlap
+      
+        icon-allow-overlap
+      
     </span>
   </a>
   
@@ -2990,7 +3544,9 @@
           <li class="md-nav__item">
   <a href="#icon-overlap" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-overlap
+      
+        icon-overlap
+      
     </span>
   </a>
   
@@ -2999,7 +3555,9 @@
           <li class="md-nav__item">
   <a href="#icon-ignore-placement" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-ignore-placement
+      
+        icon-ignore-placement
+      
     </span>
   </a>
   
@@ -3008,7 +3566,9 @@
           <li class="md-nav__item">
   <a href="#icon-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-optional
+      
+        icon-optional
+      
     </span>
   </a>
   
@@ -3017,7 +3577,9 @@
           <li class="md-nav__item">
   <a href="#icon-rotation-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-rotation-alignment
+      
+        icon-rotation-alignment
+      
     </span>
   </a>
   
@@ -3026,7 +3588,9 @@
           <li class="md-nav__item">
   <a href="#icon-size" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-size
+      
+        icon-size
+      
     </span>
   </a>
   
@@ -3035,7 +3599,9 @@
           <li class="md-nav__item">
   <a href="#icon-text-fit" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-text-fit
+      
+        icon-text-fit
+      
     </span>
   </a>
   
@@ -3044,7 +3610,9 @@
           <li class="md-nav__item">
   <a href="#icon-text-fit-padding" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-text-fit-padding
+      
+        icon-text-fit-padding
+      
     </span>
   </a>
   
@@ -3053,7 +3621,9 @@
           <li class="md-nav__item">
   <a href="#icon-image" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-image
+      
+        icon-image
+      
     </span>
   </a>
   
@@ -3062,7 +3632,9 @@
           <li class="md-nav__item">
   <a href="#icon-rotate" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-rotate
+      
+        icon-rotate
+      
     </span>
   </a>
   
@@ -3071,7 +3643,9 @@
           <li class="md-nav__item">
   <a href="#icon-padding" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-padding
+      
+        icon-padding
+      
     </span>
   </a>
   
@@ -3080,7 +3654,9 @@
           <li class="md-nav__item">
   <a href="#icon-keep-upright" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-keep-upright
+      
+        icon-keep-upright
+      
     </span>
   </a>
   
@@ -3089,7 +3665,9 @@
           <li class="md-nav__item">
   <a href="#icon-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-offset
+      
+        icon-offset
+      
     </span>
   </a>
   
@@ -3098,7 +3676,9 @@
           <li class="md-nav__item">
   <a href="#icon-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-anchor
+      
+        icon-anchor
+      
     </span>
   </a>
   
@@ -3107,7 +3687,9 @@
           <li class="md-nav__item">
   <a href="#icon-pitch-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-pitch-alignment
+      
+        icon-pitch-alignment
+      
     </span>
   </a>
   
@@ -3116,7 +3698,9 @@
           <li class="md-nav__item">
   <a href="#text-pitch-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      text-pitch-alignment
+      
+        text-pitch-alignment
+      
     </span>
   </a>
   
@@ -3125,7 +3709,9 @@
           <li class="md-nav__item">
   <a href="#text-rotation-alignment" class="md-nav__link">
     <span class="md-ellipsis">
-      text-rotation-alignment
+      
+        text-rotation-alignment
+      
     </span>
   </a>
   
@@ -3134,7 +3720,9 @@
           <li class="md-nav__item">
   <a href="#text-field" class="md-nav__link">
     <span class="md-ellipsis">
-      text-field
+      
+        text-field
+      
     </span>
   </a>
   
@@ -3143,7 +3731,9 @@
           <li class="md-nav__item">
   <a href="#text-font" class="md-nav__link">
     <span class="md-ellipsis">
-      text-font
+      
+        text-font
+      
     </span>
   </a>
   
@@ -3152,7 +3742,9 @@
           <li class="md-nav__item">
   <a href="#text-size" class="md-nav__link">
     <span class="md-ellipsis">
-      text-size
+      
+        text-size
+      
     </span>
   </a>
   
@@ -3161,7 +3753,9 @@
           <li class="md-nav__item">
   <a href="#text-max-width" class="md-nav__link">
     <span class="md-ellipsis">
-      text-max-width
+      
+        text-max-width
+      
     </span>
   </a>
   
@@ -3170,7 +3764,9 @@
           <li class="md-nav__item">
   <a href="#text-line-height" class="md-nav__link">
     <span class="md-ellipsis">
-      text-line-height
+      
+        text-line-height
+      
     </span>
   </a>
   
@@ -3179,7 +3775,9 @@
           <li class="md-nav__item">
   <a href="#text-letter-spacing" class="md-nav__link">
     <span class="md-ellipsis">
-      text-letter-spacing
+      
+        text-letter-spacing
+      
     </span>
   </a>
   
@@ -3188,7 +3786,9 @@
           <li class="md-nav__item">
   <a href="#text-justify" class="md-nav__link">
     <span class="md-ellipsis">
-      text-justify
+      
+        text-justify
+      
     </span>
   </a>
   
@@ -3197,7 +3797,9 @@
           <li class="md-nav__item">
   <a href="#text-radial-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      text-radial-offset
+      
+        text-radial-offset
+      
     </span>
   </a>
   
@@ -3206,7 +3808,9 @@
           <li class="md-nav__item">
   <a href="#text-variable-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      text-variable-anchor
+      
+        text-variable-anchor
+      
     </span>
   </a>
   
@@ -3215,7 +3819,9 @@
           <li class="md-nav__item">
   <a href="#text-variable-anchor-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      text-variable-anchor-offset
+      
+        text-variable-anchor-offset
+      
     </span>
   </a>
   
@@ -3224,7 +3830,9 @@
           <li class="md-nav__item">
   <a href="#text-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      text-anchor
+      
+        text-anchor
+      
     </span>
   </a>
   
@@ -3233,7 +3841,9 @@
           <li class="md-nav__item">
   <a href="#text-max-angle" class="md-nav__link">
     <span class="md-ellipsis">
-      text-max-angle
+      
+        text-max-angle
+      
     </span>
   </a>
   
@@ -3242,7 +3852,9 @@
           <li class="md-nav__item">
   <a href="#text-writing-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      text-writing-mode
+      
+        text-writing-mode
+      
     </span>
   </a>
   
@@ -3251,7 +3863,9 @@
           <li class="md-nav__item">
   <a href="#text-rotate" class="md-nav__link">
     <span class="md-ellipsis">
-      text-rotate
+      
+        text-rotate
+      
     </span>
   </a>
   
@@ -3260,7 +3874,9 @@
           <li class="md-nav__item">
   <a href="#text-padding" class="md-nav__link">
     <span class="md-ellipsis">
-      text-padding
+      
+        text-padding
+      
     </span>
   </a>
   
@@ -3269,7 +3885,9 @@
           <li class="md-nav__item">
   <a href="#text-keep-upright" class="md-nav__link">
     <span class="md-ellipsis">
-      text-keep-upright
+      
+        text-keep-upright
+      
     </span>
   </a>
   
@@ -3278,7 +3896,9 @@
           <li class="md-nav__item">
   <a href="#text-transform" class="md-nav__link">
     <span class="md-ellipsis">
-      text-transform
+      
+        text-transform
+      
     </span>
   </a>
   
@@ -3287,7 +3907,9 @@
           <li class="md-nav__item">
   <a href="#text-offset" class="md-nav__link">
     <span class="md-ellipsis">
-      text-offset
+      
+        text-offset
+      
     </span>
   </a>
   
@@ -3296,7 +3918,9 @@
           <li class="md-nav__item">
   <a href="#text-allow-overlap" class="md-nav__link">
     <span class="md-ellipsis">
-      text-allow-overlap
+      
+        text-allow-overlap
+      
     </span>
   </a>
   
@@ -3305,7 +3929,9 @@
           <li class="md-nav__item">
   <a href="#text-overlap" class="md-nav__link">
     <span class="md-ellipsis">
-      text-overlap
+      
+        text-overlap
+      
     </span>
   </a>
   
@@ -3314,7 +3940,9 @@
           <li class="md-nav__item">
   <a href="#text-ignore-placement" class="md-nav__link">
     <span class="md-ellipsis">
-      text-ignore-placement
+      
+        text-ignore-placement
+      
     </span>
   </a>
   
@@ -3323,7 +3951,9 @@
           <li class="md-nav__item">
   <a href="#text-optional" class="md-nav__link">
     <span class="md-ellipsis">
-      text-optional
+      
+        text-optional
+      
     </span>
   </a>
   
@@ -3332,7 +3962,9 @@
           <li class="md-nav__item">
   <a href="#visibility_6" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -3341,7 +3973,9 @@
           <li class="md-nav__item">
   <a href="#icon-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-opacity
+      
+        icon-opacity
+      
     </span>
   </a>
   
@@ -3350,7 +3984,9 @@
           <li class="md-nav__item">
   <a href="#icon-color" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-color
+      
+        icon-color
+      
     </span>
   </a>
   
@@ -3359,7 +3995,9 @@
           <li class="md-nav__item">
   <a href="#icon-halo-color" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-halo-color
+      
+        icon-halo-color
+      
     </span>
   </a>
   
@@ -3368,7 +4006,9 @@
           <li class="md-nav__item">
   <a href="#icon-halo-width" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-halo-width
+      
+        icon-halo-width
+      
     </span>
   </a>
   
@@ -3377,7 +4017,9 @@
           <li class="md-nav__item">
   <a href="#icon-halo-blur" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-halo-blur
+      
+        icon-halo-blur
+      
     </span>
   </a>
   
@@ -3386,7 +4028,9 @@
           <li class="md-nav__item">
   <a href="#icon-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-translate
+      
+        icon-translate
+      
     </span>
   </a>
   
@@ -3395,7 +4039,9 @@
           <li class="md-nav__item">
   <a href="#icon-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      icon-translate-anchor
+      
+        icon-translate-anchor
+      
     </span>
   </a>
   
@@ -3404,7 +4050,9 @@
           <li class="md-nav__item">
   <a href="#text-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      text-opacity
+      
+        text-opacity
+      
     </span>
   </a>
   
@@ -3413,7 +4061,9 @@
           <li class="md-nav__item">
   <a href="#text-color" class="md-nav__link">
     <span class="md-ellipsis">
-      text-color
+      
+        text-color
+      
     </span>
   </a>
   
@@ -3422,7 +4072,9 @@
           <li class="md-nav__item">
   <a href="#text-halo-color" class="md-nav__link">
     <span class="md-ellipsis">
-      text-halo-color
+      
+        text-halo-color
+      
     </span>
   </a>
   
@@ -3431,7 +4083,9 @@
           <li class="md-nav__item">
   <a href="#text-halo-width" class="md-nav__link">
     <span class="md-ellipsis">
-      text-halo-width
+      
+        text-halo-width
+      
     </span>
   </a>
   
@@ -3440,7 +4094,9 @@
           <li class="md-nav__item">
   <a href="#text-halo-blur" class="md-nav__link">
     <span class="md-ellipsis">
-      text-halo-blur
+      
+        text-halo-blur
+      
     </span>
   </a>
   
@@ -3449,7 +4105,9 @@
           <li class="md-nav__item">
   <a href="#text-translate" class="md-nav__link">
     <span class="md-ellipsis">
-      text-translate
+      
+        text-translate
+      
     </span>
   </a>
   
@@ -3458,7 +4116,9 @@
           <li class="md-nav__item">
   <a href="#text-translate-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      text-translate-anchor
+      
+        text-translate-anchor
+      
     </span>
   </a>
   
@@ -3472,7 +4132,9 @@
         <li class="md-nav__item">
   <a href="#raster" class="md-nav__link">
     <span class="md-ellipsis">
-      Raster
+      
+        Raster
+      
     </span>
   </a>
   
@@ -3482,7 +4144,9 @@
           <li class="md-nav__item">
   <a href="#visibility_7" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -3491,7 +4155,9 @@
           <li class="md-nav__item">
   <a href="#raster-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-opacity
+      
+        raster-opacity
+      
     </span>
   </a>
   
@@ -3500,7 +4166,9 @@
           <li class="md-nav__item">
   <a href="#raster-hue-rotate" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-hue-rotate
+      
+        raster-hue-rotate
+      
     </span>
   </a>
   
@@ -3509,7 +4177,9 @@
           <li class="md-nav__item">
   <a href="#raster-brightness-min" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-brightness-min
+      
+        raster-brightness-min
+      
     </span>
   </a>
   
@@ -3518,7 +4188,9 @@
           <li class="md-nav__item">
   <a href="#raster-brightness-max" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-brightness-max
+      
+        raster-brightness-max
+      
     </span>
   </a>
   
@@ -3527,7 +4199,9 @@
           <li class="md-nav__item">
   <a href="#raster-saturation" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-saturation
+      
+        raster-saturation
+      
     </span>
   </a>
   
@@ -3536,7 +4210,20 @@
           <li class="md-nav__item">
   <a href="#raster-contrast" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-contrast
+      
+        raster-contrast
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        resampling
+      
     </span>
   </a>
   
@@ -3545,7 +4232,9 @@
           <li class="md-nav__item">
   <a href="#raster-resampling" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-resampling
+      
+        raster-resampling
+      
     </span>
   </a>
   
@@ -3554,7 +4243,9 @@
           <li class="md-nav__item">
   <a href="#raster-fade-duration" class="md-nav__link">
     <span class="md-ellipsis">
-      raster-fade-duration
+      
+        raster-fade-duration
+      
     </span>
   </a>
   
@@ -3568,7 +4259,9 @@
         <li class="md-nav__item">
   <a href="#hillshade" class="md-nav__link">
     <span class="md-ellipsis">
-      Hillshade
+      
+        Hillshade
+      
     </span>
   </a>
   
@@ -3578,7 +4271,9 @@
           <li class="md-nav__item">
   <a href="#visibility_8" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -3587,7 +4282,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-illumination-direction" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-illumination-direction
+      
+        hillshade-illumination-direction
+      
     </span>
   </a>
   
@@ -3596,7 +4293,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-illumination-altitude" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-illumination-altitude
+      
+        hillshade-illumination-altitude
+      
     </span>
   </a>
   
@@ -3605,7 +4304,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-illumination-anchor" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-illumination-anchor
+      
+        hillshade-illumination-anchor
+      
     </span>
   </a>
   
@@ -3614,7 +4315,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-exaggeration" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-exaggeration
+      
+        hillshade-exaggeration
+      
     </span>
   </a>
   
@@ -3623,7 +4326,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-shadow-color" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-shadow-color
+      
+        hillshade-shadow-color
+      
     </span>
   </a>
   
@@ -3632,7 +4337,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-highlight-color" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-highlight-color
+      
+        hillshade-highlight-color
+      
     </span>
   </a>
   
@@ -3641,7 +4348,9 @@
           <li class="md-nav__item">
   <a href="#hillshade-accent-color" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-accent-color
+      
+        hillshade-accent-color
+      
     </span>
   </a>
   
@@ -3650,7 +4359,20 @@
           <li class="md-nav__item">
   <a href="#hillshade-method" class="md-nav__link">
     <span class="md-ellipsis">
-      hillshade-method
+      
+        hillshade-method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        resampling
+      
     </span>
   </a>
   
@@ -3664,7 +4386,9 @@
         <li class="md-nav__item">
   <a href="#color-relief" class="md-nav__link">
     <span class="md-ellipsis">
-      Color-relief
+      
+        Color-relief
+      
     </span>
   </a>
   
@@ -3674,7 +4398,9 @@
           <li class="md-nav__item">
   <a href="#visibility_9" class="md-nav__link">
     <span class="md-ellipsis">
-      visibility
+      
+        visibility
+      
     </span>
   </a>
   
@@ -3683,7 +4409,9 @@
           <li class="md-nav__item">
   <a href="#color-relief-opacity" class="md-nav__link">
     <span class="md-ellipsis">
-      color-relief-opacity
+      
+        color-relief-opacity
+      
     </span>
   </a>
   
@@ -3692,7 +4420,20 @@
           <li class="md-nav__item">
   <a href="#color-relief-color" class="md-nav__link">
     <span class="md-ellipsis">
-      color-relief-color
+      
+        color-relief-color
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resampling_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        resampling
+      
     </span>
   </a>
   
@@ -3713,11 +4454,10 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
-
-
   
   
 
@@ -3775,10 +4515,10 @@
 <p><em>Optional <a href="../expressions/">filter</a>.</em></p>
 <p>A expression specifying conditions on source features. Only features that match the filter are displayed. Zoom expressions in filters are only evaluated at integer zoom levels. The <code>feature-state</code> expression is not supported in filter expressions.</p>
 <h3 id="layout">layout<a class="headerlink" href="#layout" title="Permanent link">&para;</a></h3>
-<p><em>Optional <a href="./#layout">layout</a>.</em></p>
+<p><em>Optional <a href="../layers/#layout">layout</a>.</em></p>
 <p>Layout properties for the layer.</p>
 <h3 id="paint">paint<a class="headerlink" href="#paint" title="Permanent link">&para;</a></h3>
-<p><em>Optional <a href="./#paint">paint</a>.</em></p>
+<p><em>Optional <a href="../layers/#paint">paint</a>.</em></p>
 <p>Default paint properties for this layer.</p>
 <h2 id="background">Background<a class="headerlink" href="#background" title="Permanent link">&para;</a></h2>
 <h3 id="visibility">visibility<a class="headerlink" href="#visibility" title="Permanent link">&para;</a></h3>
@@ -3803,6 +4543,12 @@
 <td>0.10.0</td>
 <td>2.0.1</td>
 <td>2.0.0</td>
+</tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -3925,6 +4671,12 @@
 <td>0.10.0</td>
 <td>2.0.1</td>
 <td>2.0.0</td>
+</tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -4153,6 +4905,12 @@
 <td>0.10.0</td>
 <td>2.0.1</td>
 <td>2.0.0</td>
+</tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -4465,6 +5223,12 @@
 <td>6.0.0</td>
 <td>4.0.0</td>
 </tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+</tr>
 </tbody>
 </table>
 <h3 id="heatmap-radius">heatmap-radius<a class="headerlink" href="#heatmap-radius" title="Permanent link">&para;</a></h3>
@@ -4613,6 +5377,12 @@
 <td>0.27.0</td>
 <td>5.1.0</td>
 <td>3.6.0</td>
+</tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -4962,6 +5732,12 @@
 <td>0.10.0</td>
 <td>2.0.1</td>
 <td>2.0.0</td>
+</tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -6079,6 +6855,8 @@
 <h3 id="text-variable-anchor">text-variable-anchor<a class="headerlink" href="#text-variable-anchor" title="Permanent link">&para;</a></h3>
 <p><em><a href="#layout">Layout</a> property. Optional <a href="../types/#array">array</a>. Requires <code>text-field</code>. Requires <code>symbol-placement</code> to be <code>point</code>.</em></p>
 <p>To increase the chance of placing high-priority labels on the map, you can provide an array of <code>text-anchor</code> locations: the renderer will attempt to place the label at each location, in order, before moving onto the next label. Use <code>text-justify: auto</code> to choose justification based on anchor position. To apply an offset, use the <code>text-radial-offset</code> or the two-dimensional <code>text-offset</code>.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nt">&quot;text-variable-anchor&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;center&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;left&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;right&quot;</span><span class="p">]</span>
+</span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -6102,10 +6880,12 @@
 <p>To increase the chance of placing high-priority labels on the map, you can provide an array of <code>text-anchor</code> locations, each paired with an offset value. The renderer will attempt to place the label at each location, in order, before moving on to the next location+offset. Use <code>text-justify: auto</code> to choose justification based on anchor position. </p>
 <p>The length of the array must be even, and must alternate between enum and point entries. i.e., each anchor location must be accompanied by a point, and that point defines the offset when the corresponding anchor location is used. Positive offset values indicate right and down, while negative values indicate left and up. Anchor locations may repeat, allowing the renderer to try multiple offsets to try and place a label using the same anchor. </p>
 <p>When present, this property takes precedence over <code>text-anchor</code>, <code>text-variable-anchor</code>, <code>text-offset</code>, and <code>text-radial-offset</code>. </p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span><span class="w"> </span><span class="nt">&quot;text-variable-anchor-offset&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;left&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]]</span><span class="w"> </span><span class="p">}</span><span class="w"> </span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">{</span><span class="w"> </span><span class="nt">&quot;text-variable-anchor-offset&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;left&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]]</span><span class="w"> </span><span class="p">}</span><span class="w"> </span>
 </span></code></pre></div>
 <p>When the renderer chooses the <code>top</code> anchor, <code>[0, 4]</code> will be used for <code>text-offset</code>; the text will be shifted down by 4 ems. </p>
 <p>When the renderer chooses the <code>left</code> anchor, <code>[3, 0]</code> will be used for <code>text-offset</code>; the text will be shifted right by 3 ems.</p>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&quot;text-variable-anchor-offset&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;top&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;left&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">],</span><span class="w"> </span><span class="s2">&quot;bottom&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">]]</span>
+</span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -6449,6 +7229,12 @@
 <td>0.10.0</td>
 <td>2.0.1</td>
 <td>2.0.0</td>
+</tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -6839,6 +7625,12 @@
 <td>2.0.1</td>
 <td>2.0.0</td>
 </tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+</tr>
 </tbody>
 </table>
 <h3 id="raster-opacity">raster-opacity<a class="headerlink" href="#raster-opacity" title="Permanent link">&para;</a></h3>
@@ -6967,9 +7759,35 @@
 </tr>
 </tbody>
 </table>
+<h3 id="resampling">resampling<a class="headerlink" href="#resampling" title="Permanent link">&para;</a></h3>
+<p><em><a href="#paint">Paint</a> property. Optional <a href="../types/#enum">enum</a>. Possible values: <code>linear</code>, <code>nearest</code>. Defaults to <code>"linear"</code>.</em></p>
+<p>The resampling/interpolation method to use for overscaling, also known as texture magnification filter.
+<img alt="Visual comparison of linear resampling versus nearest resampling" src="../assets/resampling.png" /></p>
+<ul>
+<li><code>linear</code>: (Bi)linear filtering interpolates pixel values using the weighted average of the four closest original source pixels creating a smooth but blurry look when overscaled</li>
+<li><code>nearest</code>: Nearest neighbor filtering interpolates pixel values using the nearest original source pixel creating a sharp but pixelated look when overscaled</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>SDK Support</th>
+<th>MapLibre GL JS</th>
+<th>MapLibre Native<br>Android</th>
+<th>MapLibre Native<br>iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basic functionality</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/7154">#7154</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/4117">#4117</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/4117">#4117</a>)</td>
+</tr>
+</tbody>
+</table>
 <h3 id="raster-resampling">raster-resampling<a class="headerlink" href="#raster-resampling" title="Permanent link">&para;</a></h3>
 <p><em><a href="#paint">Paint</a> property. Optional <a href="../types/#enum">enum</a>. Possible values: <code>linear</code>, <code>nearest</code>. Defaults to <code>"linear"</code>.</em></p>
-<p>The resampling/interpolation method to use for overscaling, also known as texture magnification filter</p>
+<p>The resampling/interpolation method to use for overscaling, also known as texture magnification filter. It is advised to use the generic <code>resampling</code> paint property instead.</p>
 <ul>
 <li><code>linear</code>: (Bi)linear filtering interpolates pixel values using the weighted average of the four closest original source pixels creating a smooth but blurry look when overscaled</li>
 <li><code>nearest</code>: Nearest neighbor filtering interpolates pixel values using the nearest original source pixel creating a sharp but pixelated look when overscaled</li>
@@ -7036,6 +7854,12 @@
 <td>0.43.0</td>
 <td>6.0.0</td>
 <td>4.0.0</td>
+</tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -7216,7 +8040,8 @@
 </table>
 <h3 id="hillshade-method">hillshade-method<a class="headerlink" href="#hillshade-method" title="Permanent link">&para;</a></h3>
 <p><em><a href="#paint">Paint</a> property. Optional <a href="../types/#enum">enum</a>. Possible values: <code>standard</code>, <code>basic</code>, <code>combined</code>, <code>igor</code>, <code>multidirectional</code>. Defaults to <code>"standard"</code>.</em></p>
-<p>The hillshade algorithm to use, one of <code>standard</code>, <code>basic</code>, <code>combined</code>, <code>igor</code>, or <code>multidirectional</code>. <img alt="image" src="../assets/hillshade_methods.png" /></p>
+<p>The hillshade algorithm to use, one of <code>standard</code>, <code>basic</code>, <code>combined</code>, <code>igor</code>, or <code>multidirectional</code>.
+<img alt="Visual comparison of standard, basic, igor, combined, and multidirectional hillshade-method" src="../assets/hillshade_methods.png" /></p>
 <ul>
 <li><code>standard</code>: The legacy hillshade method.</li>
 <li><code>basic</code>: Basic hillshade. Uses a simple physics model where the reflected light intensity is proportional to the cosine of the angle between the incident light and the surface normal. Similar to GDAL's <code>gdaldem</code> default algorithm.</li>
@@ -7242,6 +8067,32 @@
 </tr>
 </tbody>
 </table>
+<h3 id="resampling_1">resampling<a class="headerlink" href="#resampling_1" title="Permanent link">&para;</a></h3>
+<p><em><a href="#paint">Paint</a> property. Optional <a href="../types/#enum">enum</a>. Possible values: <code>linear</code>, <code>nearest</code>. Defaults to <code>"linear"</code>.</em></p>
+<p>The resampling/interpolation method to use for overscaling, also known as texture magnification filter.
+<img alt="Visual comparison of linear resampling versus nearest resampling" src="../assets/resampling.png" /></p>
+<ul>
+<li><code>linear</code>: (Bi)linear filtering interpolates pixel values using the weighted average of the four closest original source pixels creating a smooth but blurry look when overscaled</li>
+<li><code>nearest</code>: Nearest neighbor filtering interpolates pixel values using the nearest original source pixel creating a sharp but pixelated look when overscaled</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>SDK Support</th>
+<th>MapLibre GL JS</th>
+<th>MapLibre Native<br>Android</th>
+<th>MapLibre Native<br>iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basic functionality</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/7154">#7154</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/4117">#4117</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/4117">#4117</a>)</td>
+</tr>
+</tbody>
+</table>
 <h2 id="color-relief">Color-relief<a class="headerlink" href="#color-relief" title="Permanent link">&para;</a></h2>
 <h3 id="visibility_9">visibility<a class="headerlink" href="#visibility_9" title="Permanent link">&para;</a></h3>
 <p><em><a href="#layout">Layout</a> property. Optional <a href="../types/#enum">enum</a>. Possible values: <code>visible</code>, <code>none</code>. Defaults to <code>"visible"</code>.</em></p>
@@ -7262,9 +8113,15 @@
 <tbody>
 <tr>
 <td>basic functionality</td>
-<td>Not supported yet</td>
-<td>Not supported yet</td>
-<td>Not supported yet</td>
+<td>5.6.0</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3408">#3408</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3408">#3408</a>)</td>
+</tr>
+<tr>
+<td><code>global state</code> expression</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/6495">#6495</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/3302">#3302</a>)</td>
 </tr>
 </tbody>
 </table>
@@ -7292,15 +8149,15 @@
 <h3 id="color-relief-color">color-relief-color<a class="headerlink" href="#color-relief-color" title="Permanent link">&para;</a></h3>
 <p><em><a href="#paint">Paint</a> property. Optional <a href="../types/#color">color</a>. Supports <a href="../expressions/#interpolate">interpolate</a> expressions.</em></p>
 <p>Defines the color of each pixel based on its elevation. Should be an expression that uses <code>["elevation"]</code> as input.</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nt">&quot;color-relief-color&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">    </span><span class="s2">&quot;interpolate&quot;</span><span class="p">,</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;linear&quot;</span><span class="p">],</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;elevation&quot;</span><span class="p">],</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">    </span><span class="mi">0</span><span class="p">,</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">    </span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">    </span><span class="mi">8849</span><span class="p">,</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="w">    </span><span class="s2">&quot;white&quot;</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="p">]</span>
+<div class="language-json highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nt">&quot;color-relief-color&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">    </span><span class="s2">&quot;interpolate&quot;</span><span class="p">,</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;linear&quot;</span><span class="p">],</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="w">    </span><span class="p">[</span><span class="s2">&quot;elevation&quot;</span><span class="p">],</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="w">    </span><span class="mi">0</span><span class="p">,</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="w">    </span><span class="s2">&quot;black&quot;</span><span class="p">,</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="w">    </span><span class="mi">8849</span><span class="p">,</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="w">    </span><span class="s2">&quot;white&quot;</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="p">]</span>
 </span></code></pre></div>
 <table>
 <thead>
@@ -7326,6 +8183,32 @@
 </tr>
 </tbody>
 </table>
+<h3 id="resampling_2">resampling<a class="headerlink" href="#resampling_2" title="Permanent link">&para;</a></h3>
+<p><em><a href="#paint">Paint</a> property. Optional <a href="../types/#enum">enum</a>. Possible values: <code>linear</code>, <code>nearest</code>. Defaults to <code>"linear"</code>.</em></p>
+<p>The resampling/interpolation method to use for overscaling, also known as texture magnification filter.
+<img alt="Visual comparison of linear resampling versus nearest resampling" src="../assets/resampling.png" /></p>
+<ul>
+<li><code>linear</code>: (Bi)linear filtering interpolates pixel values using the weighted average of the four closest original source pixels creating a smooth but blurry look when overscaled</li>
+<li><code>nearest</code>: Nearest neighbor filtering interpolates pixel values using the nearest original source pixel creating a sharp but pixelated look when overscaled</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>SDK Support</th>
+<th>MapLibre GL JS</th>
+<th>MapLibre Native<br>Android</th>
+<th>MapLibre Native<br>iOS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>basic functionality</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-gl-js/issues/7154">#7154</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/4117">#4117</a>)</td>
+<td>❌ (<a href="https://github.com/maplibre/maplibre-native/issues/4117">#4117</a>)</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -7333,8 +8216,7 @@
 
 
 
-  
-  
+
 
 
 
@@ -7351,7 +8233,7 @@
         
           <button type="button" class="md-top md-icon" data-md-component="top" hidden>
   
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
   Back to top
 </button>
         
@@ -7365,8 +8247,8 @@
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
     </a>
   
 </div>
@@ -7384,7 +8266,7 @@
       
     
     <a href="https://mastodon.social/@maplibre" target="_blank" rel="noopener me" title="mastodon.social" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54-.6-4.6-.9-9.3-.9-13.9 85.6 20.9 158.7 9.1 178.7 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6V190.1c0-49.7-64-51.6-64 6.9v62.5H201V197c0-58.5-64-56.6-64-6.9v114.2H90.3c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175"/></svg>
     </a>
   
     
@@ -7395,7 +8277,7 @@
       
     
     <a href="https://x.com/maplibre" target="_blank" rel="noopener" title="x.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M357.2 48h70.6L273.6 224.2 455 464H313L201.7 318.6 74.5 464H3.8l164.9-188.5L-5.2 48h145.6l100.5 132.9zm-24.8 373.8h39.1L119.1 88h-42z"/></svg>
     </a>
   
     
@@ -7406,7 +8288,7 @@
       
     
     <a href="https://www.linkedin.com/company/maplibre" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77m282.1 320h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
     
@@ -7417,7 +8299,7 @@
       
     
     <a href="https://osmus.slack.com/archives/C01G3D28DAB" target="_blank" rel="noopener" title="osmus.slack.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M94.1 315.1c0 25.9-21.2 47.1-47.1 47.1S0 341 0 315.1 21.2 268 47.1 268h47.1v47.1zm23.7 0c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1v117.8c0 25.9-21.2 47.1-47.1 47.1s-47.1-21.2-47.1-47.1zm47.1-189c-25.9 0-47.1-21.2-47.1-47.1s21.2-47 47.1-47S212 53.2 212 79.1v47.1h-47.1zm0 23.7c25.9 0 47.1 21.2 47.1 47.1S190.8 244 164.9 244H47.1C21.2 244 0 222.8 0 196.9s21.2-47.1 47.1-47.1zm189 47.1c0-25.9 21.2-47.1 47.1-47.1s47 21.2 47 47.1-21.2 47.1-47.1 47.1h-47.1v-47.1zm-23.7 0c0 25.9-21.2 47.1-47.1 47.1S236 222.8 236 196.9V79.1c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1zm-47.1 189c25.9 0 47.1 21.2 47.1 47.1s-21.2 47-47.1 47-47.1-21.2-47.1-47.1v-47.1h47.1zm0-23.7c-25.9 0-47.1-21.2-47.1-47.1s21.2-47.1 47.1-47.1h117.8c25.9 0 47.1 21.2 47.1 47.1s-21.2 47.1-47.1 47.1z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M94.1 315.1c0 25.9-21.2 47.1-47.1 47.1S0 341 0 315.1 21.2 268 47.1 268h47.1v47.1zm23.7 0c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1v117.8c0 25.9-21.2 47.1-47.1 47.1s-47.1-21.2-47.1-47.1zm47.1-189c-25.9 0-47.1-21.2-47.1-47.1s21.2-47 47.1-47S212 53.2 212 79.1v47.1h-47.1zm0 23.7c25.9 0 47.1 21.2 47.1 47.1S190.8 244 164.9 244H47.1C21.2 244 0 222.8 0 196.9s21.2-47.1 47.1-47.1zm189 47.1c0-25.9 21.2-47.1 47.1-47.1s47 21.2 47 47.1-21.2 47.1-47.1 47.1h-47.1v-47.1zm-23.7 0c0 25.9-21.2 47.1-47.1 47.1S236 222.8 236 196.9V79.1c0-25.9 21.2-47.1 47.1-47.1s47.1 21.2 47.1 47.1zm-47.1 189c25.9 0 47.1 21.2 47.1 47.1s-21.2 47-47.1 47-47.1-21.2-47.1-47.1v-47.1h47.1zm0-23.7c-25.9 0-47.1-21.2-47.1-47.1s21.2-47.1 47.1-47.1h117.8c25.9 0 47.1 21.2 47.1 47.1s-21.2 47.1-47.1 47.1z"/></svg>
     </a>
   
     
@@ -7428,7 +8310,7 @@
       
     
     <a href="https://github.com/maplibre" target="_blank" rel="noopener" title="github.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
     </a>
   
 </div>
@@ -7445,10 +8327,12 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "toc.follow", "search.suggest", "navigation.instant", "navigation.sections", "navigation.top"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["content.code.copy","toc.follow","search.suggest","navigation.instant","navigation.sections","navigation.top"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
-      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.5fcf0de6.min.js"></script>
       
     
   </body>
